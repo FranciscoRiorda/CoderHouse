@@ -1,261 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppAdoption</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/43148663fd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
 
-    <header>
-        <div class="portadaImg">
-            <h1 class="titulo">Centro de Adopción de Mascotas <span>AppAdoption</span></h1>
-        </div>
-    </header>
+    <header class="header">
 
-    <nav class="nav">
-        <div class="nav">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><span>AppAdoption</span></a></div>
             <div class="caja"><a href="index.html">Página Principal</a></div>
             <div class="caja"><a href="./pages/perros.html">Perros</a></div>
             <div class="caja"><a href="./pages/gatos.html">Gatos</a></div>
             <div class="caja"><a href="./pages/otrasEspecies.html">Otras Especies</a></div>
-            <!-- <div class="caja"><a href="./pages/favoritos.html">Favoritos</a></div> -->
             <div class="caja"><a href="./pages/nosotros.html">Sobre Nosotros</a></div>
-            <div class="caja"><a href="./pages/contactanos.html">Contactanos</a></div>
+            <div class="caja lastCaja"><a href="./pages/contactanos.html">Contáctanos</a></div>
+        </nav>
+
+        <div class="portadaImg">
+            <h1 class="titulo">Centro de Adopción de Mascotas <span>AppAdoption</span></h1>
         </div>
-    </nav>
 
-    <main>
+    </header>
 
-        <!-- <div>
-            <img class="welcome" src="./assets/img/portada2.jpg" alt="imagen animada de portada. 'Welvome Friend'">
-        </div> -->
 
-        <div class="fondo">
+    <main class="main">
+
+        <section class="seccion tarjetas">
+
             <div class="banner">
                 <h2 class="titulo">Mascotas de la Semana</h2>
             </div>
 
-            <section class="mascotaSemana">
-                <!-- Tarjetas de mascotas en adopción -->
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Bernardo</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/perros.jpg"
-                                alt="Foto de Bernardo. Perro de Pelaje blanco con manchas negras">
-                            <!-- <div class="zoom">
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-                        <div class="zoom">
-                            <i class="fa-solid fa-heart"></i>
-                        </div> -->
-                        </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
-                        </div>
-                        <button class="btn">Adoptar</button>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Bernardo</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perros22.jpg"
+                            alt="Foto de Bernardo. Perro de Pelaje blanco con manchas negras">
                     </div>
-                </article>
-
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Thor</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/perros2.jpg"
-                                alt="Foto de Thor. Perro Doberman negro">
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
                         </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>2 años</b>
                         </div>
-                        <button class="btn">Adoptar</button>
                     </div>
-                </article>
+                    <a class="btn" href="">Adoptar</a>
+                </div>
+            </article>
 
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Jack</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/gato.jpg" alt="Foto de Jack. Gato atigrado.">
-                            <!-- <div class="zoom">
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-                        <div class="zoom">
-                            <i class="fa-solid fa-heart"></i>
-                        </div> -->
-                        </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
-                        </div>
-                        <button class="btn">Adoptar</button>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Thor</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perros11.jpg"
+                            alt="Foto de Thor. Perro Doberman negro">
                     </div>
-                </article>
-
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Rocky</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/gatoNegro.jpg" alt="Foto de Rocky. Gato negro">
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
                         </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>3 años</b>
                         </div>
-                        <button class="btn">Adoptar</button>
                     </div>
-                </article>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
 
-            </section>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Jack</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/gato.jpg"
+                            alt="Foto de Jack. Gato de pelaje atigrado.">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>1 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
 
-        </div>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Rocky</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/gatoNegro.jpg"
+                            alt="Foto de Rocky. Gato de pelaje negro">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>2 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
 
-        <div class="fondo">
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Onix</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perrochico.jpg"
+                            alt="Perro de tamaño chico y pelaje marrón claro">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>4 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="seccion tarjetas">
 
             <div class="banner">
-                <h2 class="titulo">Más mascotas que buscan un hogar</h2>
+                <h2 class="titulo">Otras mascotas que buscan un hogar</h2>
             </div>
 
-            <section class="mascotaSemana">
-                <!-- Tarjetas de mascotas en adopción -->
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Bernardo</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/perros.jpg" alt="Perro 1">
-                        </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
-                        </div>
-                        <button class="btn">Adoptar</button>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Troy</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="../assets/img/gatochico-min.png" alt="Gato de pleaje marrón atigrado.">
                     </div>
-                </article>
-
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Bernardo</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/perros.jpg" alt="Perro 1">
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
                         </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>1 años</b>
                         </div>
-                        <button class="btn">Adoptar</button>
                     </div>
-                </article>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
 
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Bernardo</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/perros.jpg" alt="Perro 1">
-                        </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
-                        </div>
-                        <button class="btn">Adoptar</button>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Beto</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/cachorroNegro-min.png" alt="Cachorro de pelaje negro">
                     </div>
-                </article>
-
-                <article>
-                    <div class="tarjeta zoom">
-                        <h3>Bernardo</h3>
-                        <div class="iconoImg">
-                            <img class="imgTarjeta" src="./assets/img/perros.jpg" alt="Perro 1">
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
                         </div>
-                        <p><b class="titulo">Descripción de la mascota</b></p>
-                        <div class="iconos">
-                            <div class="icono">
-                                <i class="fa-solid fa-syringe"></i>
-                                <b>Vacunas al día</b>
-                            </div>
-                            <div class="icono">
-                                <i class="fa-solid fa-calendar-day"></i>
-                                <b>3 años</b>
-                            </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>1 años</b>
                         </div>
-                        <button class="btn">Adoptar</button>
                     </div>
-                </article>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
 
-            </section>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Sammy</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/gata.png" alt="Gata de pelaje de tres colores">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>2 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
 
-        </div>
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Kratos</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perroblanco.png"
+                            alt="Perro de pelaje blanco con manchas negras en la cara">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>5 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Oliver</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perromarron.jpg" alt="Perro de pelaje marrón claro">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>4 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Chloe</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/gatomanchas.jpg" alt="Gato blanco con machas grises">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>4 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Max</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perroatigrado.png" alt="Perro marrón atigrado.">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>4 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Lilly</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/gatonaranja.png" alt="Gato naranja">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>1 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Alma</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/perronegro.png" alt="Perro de pelaje negro y marrón">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>4 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="tarjeta zoom">
+                    <h3>Lady</h3>
+                    <div class="iconoImg">
+                        <img class="imgTarjeta" src="./assets/img/gatogris.png" alt="Gato de pleaje gris.">
+                    </div>
+                    <div class="iconos">
+                        <div class="icono">
+                            <i class="fa-solid fa-syringe"></i>
+                            <b>Vacunas al día</b>
+                        </div>
+                        <div class="icono">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <b>1 años</b>
+                        </div>
+                    </div>
+                    <a class="btn">Adoptar</a>
+                </div>
+            </article>
+
+        </section>
 
     </main>
 
     <!-- pié de página -->
-    <footer>
-        <ul>
-            <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
-        </ul>
-        <ul>
-            <li><a href="./index.html">Página Principal</a></li>
-            <li><a href="./pages/perros.html">Adopción de Perros</a></li>
-            <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
-            <li><a href="./pages/otrasEspecies.html">Adopción de otras Mascotas</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="listas">
+            <ul>
+                <p class="tituloFooter"><b>Nuestras Redes</b></p>
+                <div class="redes">
+                    <li class="zoom"><a href=""><img src="./assets/img/facebook-min.png"
+                                alt="ir a facebook de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="./assets/img/instagram-min.png"
+                                alt="ir a instagram de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="./assets/img/whatsapp-min.png"
+                                alt="ir a whatsapp de AppAdoption"></a></li>
+                </div>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Información de AppAdoption</b></p>
+                <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Rutas Principales</b></p>
+                <li><a href="./index.html">Página Principal</a></li>
+                <li><a href="./pages/perros.html">Adopción de Perros</a></li>
+                <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
+                <li><a href="./pages/otrasEspecies.html">Otras Mascotas</a></li>
+            </ul>
+        </div>
 
         <p>Derechos reservados © (Copyright)</p>
     </footer>

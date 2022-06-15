@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,28 +12,26 @@
 </head>
 
 <body>
-    <header>
-        <div class="portadaImg">
-            <h1 class="titulo">Centro de Adopción de Mascotas <span>AppAdoption</span></h1>
-        </div>
-    </header>
 
-    <nav class="nav">
-        <div class="nav">
+    <header class="header">
+
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html"><span>AppAdoption</span></a></div>
             <div class="caja"><a href="../index.html">Página Principal</a></div>
             <div class="caja"><a href="./perros.html">Perros</a></div>
             <div class="caja"><a href="./gatos.html">Gatos</a></div>
             <div class="caja"><a href="./otrasEspecies.html">Otras Especies</a></div>
-            <!-- <div class="caja"><a href="./favoritos.html">Favoritos</a></div> -->
             <div class="caja"><a href="./nosotros.html">Sobre Nosotros</a></div>
-            <div class="caja"><a href="./contactanos.html">Contactanos</a></div>
-        </div>
-    </nav>
+            <div class="caja lastCaja"><a href="./contactanos.html">Contáctanos</a></div>
+        </nav>
 
-    <section>
         <div class="banner">
-            <h2 class="titulo">Otras Especies en adopción</h2>
+            <h1 class="titulo">Otras especies en Adopción</h1>
         </div>
+
+    </header>
+
+    <section class="mascotaSemana tarjetas">
 
         <article>
             <div>
@@ -52,17 +50,32 @@
 
     </section>
 
-    <footer>
-        <ul>
-            <li><a href="./nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./contactanos.html">Centro de ayuda</a></li>
-        </ul>
-        <ul>
-            <li><a href="../index.html">Página Principal</a></li>
-            <li><a href="./perros.html">Adopción de Perros</a></li>
-            <li><a href="./gatos.html">Adopción de Gatos</a></li>
-            <li><a href="./otrasEspecies.html">Adopción de otras Mascotas</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="listas">
+            <ul>
+                <p class="tituloFooter"><b>Nuestras Redes</b></p>
+                <div class="redes">
+                    <li class="zoom"><a href=""><img src="../assets/img/facebook-min.png"
+                                alt="ir a facebook de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="../assets/img/instagram-min.png"
+                                alt="ir a instagram de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="../assets/img/whatsapp-min.png"
+                                alt="ir a whatsapp de AppAdoption"></a></li>
+                </div>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Información de AppAdoption</b></p>
+                <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Rutas Principales</b></p>
+                <li><a href="./index.html">Página Principal</a></li>
+                <li><a href="./pages/perros.html">Adopción de Perros</a></li>
+                <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
+                <li><a href="./pages/otrasEspecies.html">Otras Mascotas</a></li>
+            </ul>
+        </div>
 
         <p>Derechos reservados © (Copyright)</p>
     </footer>
