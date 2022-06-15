@@ -21,7 +21,7 @@ body {
 header .portadaImg {
     background-image: url("../img/portada3-min.jpg");
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -31,7 +31,7 @@ header .portadaImg {
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
 }
 
-header .banner{
+header .banner {
     height: 120px;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ header .banner{
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
 }
 
-header .banner .titulo{
+header .banner .titulo {
     font-size: 3rem;
 }
 
@@ -89,7 +89,7 @@ span {
             var(--transp) 100%);
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: start;
 }
@@ -140,12 +140,12 @@ span {
     padding: 15px 5px;
 }
 
-.lastCaja{
+.lastCaja {
     margin-right: 50px;
 }
 
 
-.caja:hover{
+.caja:hover {
     background-color: rgb(32, 32, 32);
 }
 
@@ -155,7 +155,7 @@ span {
     text-decoration: none;
 }
 
-.logo{
+.logo {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin-right: auto;
@@ -277,7 +277,7 @@ footer>p {
     text-align: center;
 }
 
-.tituloFooter{
+.tituloFooter {
     color: rgb(140, 139, 139);
     padding-bottom: 15px;
     text-align: start;
@@ -305,12 +305,12 @@ footer>p {
     text-decoration: underline;
 }
 
-.listas ul li a img{
+.listas ul li a img {
     width: 35px;
     margin-right: 10px;
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: start;
 }
@@ -321,48 +321,43 @@ footer>p {
 /* Inicio Formulario */
 
 form {
-    display:list-item;
+    display: list-item;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 100%;
-    padding: 15px;
-    margin-bottom: 80px;
 }
 
 .datos {
     margin-bottom: 10px;
 }
 
-div.divForm.datos input{
-    margin: 0px 20px;
+div.divForm.datos input {
+    margin: 0px 10px;
 }
 
 label {
     width: 50%;
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px;
     display: inline-block;
-}
-div fieldset {
-    margin: 20px;
-    border-radius: 15px;
 }
 
 .divForm {
     display: flex;
     justify-content: center;
+    margin: 20px 0px;
 }
 
 select {
     width: 30%;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     background-color: #f1f1f1;
-    margin-bottom: 20px;
-  }
 
-  textarea {
+}
+
+textarea {
     width: 30%;
     height: 120px;
     padding: 12px 20px;
@@ -371,12 +366,11 @@ select {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-  }
+}
 
 form input[type="text"],
 form input[type="email"],
-form input[type="number"]
- {
+form input[type="number"] {
     width: 180px;
     padding: 3px 10px;
     border: 1px solid #f6f6f6;
@@ -412,9 +406,9 @@ form input[type="submit"]:hover {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0px 1fr auto auto;
         grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
-                             "header header header header header header header header header header header header"
-                             "main main main main main main main main main main main main"
-                             "footer footer footer footer footer footer footer footer footer footer footer footer";
+            "header header header header header header header header header header header header"
+            "main main main main main main main main main main main main"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 
     .navbar {
@@ -425,7 +419,7 @@ form input[type="submit"]:hover {
         padding: 10px 15px;
     }
 
-    .logo{
+    .logo {
         font-size: 1.3rem;
         margin-top: 2px
     }
@@ -442,7 +436,7 @@ form input[type="submit"]:hover {
         height: 110px;
     }
 
-    header .banner .titulo{
+    header .banner .titulo {
         font-size: 2.5rem;
     }
 
@@ -500,7 +494,7 @@ form input[type="submit"]:hover {
         grid-area: footer;
     }
 
-    .listas{
+    .listas {
         padding: 20px;
     }
 
@@ -512,7 +506,7 @@ form input[type="submit"]:hover {
         margin: 8px;
     }
 
-    .listas ul li a img{
+    .listas ul li a img {
         width: 30px;
         margin-right: 0px;
     }
@@ -527,9 +521,9 @@ form input[type="submit"]:hover {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0px 1fr auto auto;
         grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
-                             "header header header header header header header header header header header header"
-                             "main main main main main main main main main main main main"
-                             "footer footer footer footer footer footer footer footer footer footer footer footer";
+            "header header header header header header header header header header header header"
+            "main main main main main main main main main main main main"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 
     .navbar {
@@ -541,7 +535,7 @@ form input[type="submit"]:hover {
         font-size: 0.7rem;
     }
 
-    .lastCaja{
+    .lastCaja {
         margin-right: 20px;
     }
 
@@ -549,7 +543,7 @@ form input[type="submit"]:hover {
         padding: 1px 5px;
     }
 
-    .logo{
+    .logo {
         font-size: 1rem;
         margin-top: 4px
     }
@@ -566,7 +560,7 @@ form input[type="submit"]:hover {
         height: 100px;
     }
 
-    header .banner .titulo{
+    header .banner .titulo {
         font-size: 2.3rem;
     }
 
@@ -631,7 +625,7 @@ form input[type="submit"]:hover {
         grid-area: footer;
     }
 
-    .listas{
+    .listas {
         padding: 10px;
     }
 
@@ -644,7 +638,7 @@ form input[type="submit"]:hover {
         font-size: 1rem;
     }
 
-    .listas ul li a img{
+    .listas ul li a img {
         width: 25px;
         margin-right: 0px;
     }
@@ -659,9 +653,9 @@ form input[type="submit"]:hover {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0px 1fr auto auto;
         grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
-                             "header header header header header header header header header header header header"
-                             "main main main main main main main main main main main main"
-                             "footer footer footer footer footer footer footer footer footer footer footer footer";
+            "header header header header header header header header header header header header"
+            "main main main main main main main main main main main main"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 
     .navbar {
@@ -673,7 +667,7 @@ form input[type="submit"]:hover {
         font-size: 0.7rem;
     }
 
-    .lastCaja{
+    .lastCaja {
         margin-right: 20px;
     }
 
@@ -681,7 +675,7 @@ form input[type="submit"]:hover {
         padding: 1px 5px;
     }
 
-    .logo{
+    .logo {
         font-size: 1rem;
         margin-top: 4px;
     }
@@ -698,7 +692,7 @@ form input[type="submit"]:hover {
         height: 90px;
     }
 
-    header .banner .titulo{
+    header .banner .titulo {
         font-size: 2rem;
     }
 
@@ -762,7 +756,7 @@ form input[type="submit"]:hover {
         grid-area: footer;
     }
 
-    .listas{
+    .listas {
         padding: 10px;
     }
 
@@ -775,7 +769,7 @@ form input[type="submit"]:hover {
         font-size: 0.9rem;
     }
 
-    .listas ul li a img{
+    .listas ul li a img {
         width: 25px;
         margin-right: 0px;
     }
@@ -790,9 +784,9 @@ form input[type="submit"]:hover {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0px 1fr auto auto;
         grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
-                             "header header header header header header header header header header header header"
-                             "main main main main main main main main main main main main"
-                             "footer footer footer footer footer footer footer footer footer footer footer footer";
+            "header header header header header header header header header header header header"
+            "main main main main main main main main main main main main"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 
     .navbar {
@@ -812,7 +806,7 @@ form input[type="submit"]:hover {
         padding: 1px 5px;
     }
 
-    .logo{
+    .logo {
         font-size: 1rem;
         margin-top: 4px
     }
@@ -830,7 +824,7 @@ form input[type="submit"]:hover {
         height: 80px;
     }
 
-    header .banner .titulo{
+    header .banner .titulo {
         font-size: 1.5rem;
     }
 
@@ -900,7 +894,7 @@ form input[type="submit"]:hover {
         grid-area: footer;
     }
 
-    .listas{
+    .listas {
         padding: 10px;
     }
 
@@ -913,12 +907,12 @@ form input[type="submit"]:hover {
         font-size: 0.8rem;
     }
 
-    .listas ul li a img{
+    .listas ul li a img {
         width: 25px;
         margin-right: 0px;
     }
 
-    .redes{
+    .redes {
         display: flex;
         flex-direction: column;
         align-items: center;
