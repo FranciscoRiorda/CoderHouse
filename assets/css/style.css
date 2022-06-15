@@ -321,26 +321,62 @@ footer>p {
 /* Inicio Formulario */
 
 form {
-    background-color: #ccc;
+    display:list-item;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 100%;
-    display: flex;
-    float: left;
-    padding: 16px;
-    margin: 0 auto;
-    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 80px;
 }
 
-form label {
-    display: inline-block;
-    font-weight: bold;
-    width: 72px;
+.datos {
+    margin-bottom: 10px;
 }
+
+div.divForm.datos input{
+    margin: 0px 20px;
+}
+
+label {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+div fieldset {
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.divForm {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    width: 30%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 30%;
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
-    display: inline-block;
+form input[type="number"]
+ {
     width: 180px;
     padding: 3px 10px;
     border: 1px solid #f6f6f6;
@@ -350,12 +386,13 @@ form input[type="password"] {
 }
 
 form input[type="submit"] {
-    width: 100%;
+    width: 30%;
     padding: 8px 16px;
     margin-top: 32px;
     border: 1px solid #000;
     border-radius: 5px;
-    display: block;
+    display: flex;
+    justify-content: center;
     color: #fff;
     background-color: #000;
 }

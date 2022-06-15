@@ -7,51 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppAdoption</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/43148663fd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <div class="portadaImg">
-            <h1 class="titulo">Centro de Adopción de Mascotas <span>AppAdoption</span></h1>
-        </div>
-    </header>
+    <header class="header">
 
-    <nav class="nav">
-        <div class="nav">
+        <nav class="navbar">
+            <div class="logo"><a href="../index.html"><span>AppAdoption</span></a></div>
             <div class="caja"><a href="../index.html">Página Principal</a></div>
             <div class="caja"><a href="./perros.html">Perros</a></div>
             <div class="caja"><a href="./gatos.html">Gatos</a></div>
             <div class="caja"><a href="./otrasEspecies.html">Otras Especies</a></div>
-            <!-- <div class="caja"><a href="./favoritos.html">Favoritos</a></div> -->
             <div class="caja"><a href="./nosotros.html">Sobre Nosotros</a></div>
-            <div class="caja"><a href="./contactanos.html">Contactanos</a></div>
+            <div class="caja lastCaja"><a href="./contactanos.html">Contáctanos</a></div>
+        </nav>
+
+        <div class="banner">
+            <h1 class="titulo">Contáctanos</h1>
         </div>
-    </nav>
 
-    <form action="" method="post">
-        <fieldset>
-            <legend>Iniciar Sesión</legend>
-            <a class="btn" href="./register.html">Registrarme</a>
+    </header>
 
-            <a class="btn" href="">Ingresar con Google+</a>
+    <main>
+        <section>
+            <form action="" method="post">
+                <div class="divForm datos">
+                    <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+                
+                    <input type="text" name="apellido" placeholder="Ingrese su Apellido" required>
+                </div>
+                <div class="divForm datos">
+                    <input type="number" name="telefono" placeholder="Teléfono de contacto" required>
+                    <input type="email" name="mail" placeholder="Correo de contacto" required>
+                </div>
+                <div class="divForm">
+                    <select name="mascota" id="">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="indiferente">Indiferente</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
 
-            <a class="btn" href="">Ingresar con Facebook</a>
-        </fieldset>
-    </form>
+                <div class="divForm">
+                        <div>
+                            <label for="adopcion">Adopción responsable</label>
+                            <input type="radio" name="tipo" id="adopcion" value="adopcion">
+                            <label for="hogar">Hogar provisorio</label>
+                            <input type="radio" name="tipo" id="hogar" value="hogar">
+                            <label for="otro">Otro</label>
+                            <input type="radio" name="tipo" id="otro" value="otro">
+                        </div>
+                </div>
+                <div class="divForm">
+                    <textarea name="tecto" id="texto" cols="30" rows="10" placeholder="Escriba su consulta" required></textarea>
+                </div>
+                <div class="divForm">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
 
-    <footer>
-        <ul>
-            <li><a href="./nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./contactanos.html">Centro de ayuda</a></li>
-        </ul>
-        <ul>
-            <li><a href="../index.html">Página Principal</a></li>
-            <li><a href="./perros.html">Adopción de Perros</a></li>
-            <li><a href="./gatos.html">Adopción de Gatos</a></li>
-            <li><a href="./otrasEspecies.html">Adopción de otras Mascotas</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="listas">
+            <ul>
+                <p class="tituloFooter"><b>Nuestras Redes</b></p>
+                <div class="redes">
+                    <li class="zoom"><a href=""><img src="../assets/img/facebook-min.png"
+                                alt="ir a facebook de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="../assets/img/instagram-min.png"
+                                alt="ir a instagram de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="../assets/img/whatsapp-min.png"
+                                alt="ir a whatsapp de AppAdoption"></a></li>
+                </div>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Información de AppAdoption</b></p>
+                <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Rutas Principales</b></p>
+                <li><a href="./index.html">Página Principal</a></li>
+                <li><a href="./pages/perros.html">Adopción de Perros</a></li>
+                <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
+                <li><a href="./pages/otrasEspecies.html">Otras Mascotas</a></li>
+            </ul>
+        </div>
 
         <p>Derechos reservados © (Copyright)</p>
     </footer>
