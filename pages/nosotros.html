@@ -6,77 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppAdoption</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <div class="portadaImg">
-            <h1 class="titulo">Centro de Adopción de Mascotas <span>AppAdoption</span></h1>
-        </div>
-    </header>
+<body class="contenedor fondoNos">
 
-    <nav class="nav">
-        <div class="nav">
+    <nav class="navbar">
+        <div data-aos="fade-right"><a class="logo" href="../index.html"><span>AppAdoption</span></a></div>
+        <ul class="menu1">
+            <li><a data-aos="fade-left" class="">Menú</a>
+                <ul>
+                    <li><a href="../index.html">Página Principal</a></li>
+                    <li><a href="./perros.html">Perros</a></li>
+                    <li><a href="./gatos.html">Gatos</a></li>
+                    <li><a href="./otrasEspecies.html">Otras Especies</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contactanos.html">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu2">
             <div class="caja"><a href="../index.html">Página Principal</a></div>
             <div class="caja"><a href="./perros.html">Perros</a></div>
             <div class="caja"><a href="./gatos.html">Gatos</a></div>
             <div class="caja"><a href="./otrasEspecies.html">Otras Especies</a></div>
-            <!-- <div class="caja"><a href="./favoritos.html">Favoritos</a></div> -->
             <div class="caja"><a href="./nosotros.html">Sobre Nosotros</a></div>
             <div class="caja"><a href="./contactanos.html">Contactanos</a></div>
         </div>
     </nav>
 
-    <main>
+    <header class="header">
 
-        <h2>Mi Cuenta</h2>
+        <div class="banner">
+            <h1 class="titulo">¿Quiénes Somos?</h1>
+        </div>
 
-        <form action="" method="post">
-            <fieldset>
-                <legend>Datos de mi cuenta</legend>
-                <label for="nombre">Nombre: </label>
-                <input type="text" name="name" id="name">
-                <label for="apellido">Apellido: </label>
-                <input type="text" name="apellido" id="apellido">
-                <label for="mail">Mail: </label>
-                <input type="email" name="mail" id="mail">
-                <label for="telefono">Teléfono: </label>
-                <input type="text" name="telefono" id="telefono">
+    </header>
 
-                <input type="submit" value="Actualizar datos" name="login">
-            </fieldset>
-        </form>
+    <main class="main ">
+        <div class="nosotros">
+            <p class="nosotrosP">AppAdoption es un centro de adopción de mascotas especializada en recatar y brindar un
+                nuevo hogar a mascotas abandonadas. Te damos una experiencia diferente en adopción, brindando un
+                seguimiento en la adopción de la mascota para que se cumplan con las necesidades de las mascotas y la
+                satisfacción de sus dueños.
 
-        <form action="" method="post">
-            <fieldset>
-                <legend>Actualizar Contraseña</legend>
-                <label for="password">Cont actual: </label>
-                <input type="password" name="password" id="password">
-                <label for="newPassword">Nueva Cont: </label>
-                <input type="password" name="newPassword" id="newPassword">
+                En AppAdoption reconocemos a las mascotas como un miembro más de la familia, a las que debemos cuidar,
+                proteger, y brindar el mejor cuidado para que tengan una excelente calidad de vida. Para ello ofrecemos
+                el mejor asesoramiento profesional a mano de veteriarios, expertos en el cuidado animal, y mucho más!
 
-                <input type="submit" value="Cambiar contraseña" name="login">
-            </fieldset>
-        </form>
+                Podés formar parte de nuestra comunidad ayudando a cada animal que necesita un hogar, ya sea realizando
+                la adopción o ayudando con un hogar provisorio. Ante cualquier consulta, podrás contactarte con nuestro
+                equipo desde las redes sociales o llenando el formulario de contacto.
+
+                <br><br>
+
+                <b>AppAdoption, donde las mascotas están primero.</b>
+            </p>
+            <div class="nosotrosImg1">
+                <img src="../assets/img/nosotros3.jpg" alt="">
+            </div>
+        </div>
+        <div class="nosotrosImg2">
+            <img src="../assets/img/nosotros3.jpg" alt="">
+        </div>
 
     </main>
 
-    <footer>
-        <ul>
-            <li><a href="./nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./contactanos.html">Centro de ayuda</a></li>
-        </ul>
-        <ul>
-            <li><a href="../index.html">Página Principal</a></li>
-            <li><a href="./perros.html">Adopción de Perros</a></li>
-            <li><a href="./gatos.html">Adopción de Gatos</a></li>
-            <li><a href="./otrasEspecies.html">Adopción de otras Mascotas</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="listas">
+            <ul>
+                <p class="tituloFooter"><b>Nuestras Redes</b></p>
+                <div class="redes">
+                    <li class="zoom"><a href=""><img src="../assets/img/facebook-min.png"
+                                alt="ir a facebook de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="../assets/img/instagram-min.png"
+                                alt="ir a instagram de AppAdoption"></a></li>
+                    <li class="zoom"><a href=""><img src="../assets/img/whatsapp-min.png"
+                                alt="ir a whatsapp de AppAdoption"></a></li>
+                </div>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Información de AppAdoption</b></p>
+                <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./contactanos.html">Centro de ayuda</a></li>
+            </ul>
+            <ul>
+                <p class="tituloFooter"><b>Rutas Principales</b></p>
+                <li><a href="../index.html">Página Principal</a></li>
+                <li><a href="./perros.html">Adopción de Perros</a></li>
+                <li><a href="./gatos.html">Adopción de Gatos</a></li>
+                <li><a href="./otrasEspecies.html">Otras Mascotas</a></li>
+            </ul>
+        </div>
 
         <p>Derechos reservados © (Copyright)</p>
     </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

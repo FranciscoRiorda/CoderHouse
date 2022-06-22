@@ -1,0 +1,500 @@
+@media(max-width: 1200px) {
+
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: "header header"
+            "main main"
+            "footer footer";
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .navbar div a {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        margin-top: 2px
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    header .portadaImg {
+        height: 380px;
+    }
+
+    header .banner {
+        height: 110px;
+    }
+
+    header .banner .titulo {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .banner {
+        height: 70px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 25px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Inicio Tarjeta */
+
+    div.tarjeta {
+        margin: 10px;
+        margin-bottom: 15px;
+        width: 200px;
+    }
+
+    .icono {
+        height: 55px;
+        width: 30%;
+    }
+
+    div.iconos div.icono i {
+        font-size: 1.2rem;
+    }
+
+    div.iconoImg .imgTarjeta {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    /* Fin Tarjeta */
+
+    /* Inicio Footer */
+    .footer {
+        grid-area: footer;
+    }
+
+    .listas {
+        padding: 20px;
+    }
+
+    .listas ul {
+        padding: 20px;
+    }
+
+    .listas ul li a {
+        margin: 8px;
+    }
+
+    .listas ul li a img {
+        width: 30px;
+        margin-right: 0px;
+    }
+
+    /* Fin Footer */
+}
+
+@media(max-width: 992px) {
+
+
+    .caja {
+        padding: 10px 10px;
+        font-size: 0.7rem;
+    }
+
+    .lastCaja {
+        margin-right: 20px;
+    }
+
+    .navbar div a {
+        padding: 1px 5px;
+    }
+
+    .logo {
+        font-size: 1rem;
+        margin-top: 4px
+    }
+
+    header .portadaImg {
+        height: 280px;
+    }
+
+    header .banner {
+        height: 100px;
+    }
+
+    header .banner .titulo {
+        font-size: 2.3rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .banner {
+        height: 60px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Inicio Tarjeta */
+
+    div.tarjeta {
+        margin: 5px;
+        margin-bottom: 15px;
+        width: 200px;
+    }
+
+    div.iconos {
+        display: flex;
+        padding: 10px;
+    }
+
+    .icono {
+        font-size: 0.8rem;
+        padding: 5px;
+        height: 55px;
+        width: 30%;
+    }
+
+    div.iconos div.icono i {
+        font-size: 1rem;
+    }
+
+    div.iconoImg .imgTarjeta {
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    /* Fin Tarjeta */
+
+    /* Inicio Footer */
+
+    .listas {
+        padding: 10px;
+    }
+
+    .listas ul {
+        padding: 10px;
+    }
+
+    .listas ul li a {
+        margin: 8px;
+        font-size: 1rem;
+    }
+
+    .listas ul li a img {
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    /* Fin Footer */
+}
+
+@media(max-width: 768px) {
+
+    .body {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 0px 1fr auto auto;
+        grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+            "header header header header header header header header header header header header"
+            "main main main main main main main main main main main main"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .caja {
+        padding: 10px 10px;
+        font-size: 0.7rem;
+    }
+
+    .lastCaja {
+        margin-right: 20px;
+    }
+
+    .navbar div a {
+        padding: 1px 5px;
+    }
+
+    .logo {
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    header .portadaImg {
+        height: 250px;
+    }
+
+    header .banner {
+        height: 90px;
+    }
+
+    header .banner .titulo {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .banner {
+        height: 60px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Inicio Tarjeta */
+
+    div.tarjeta {
+        margin: 5px;
+        margin-bottom: 15px;
+        width: 180px;
+    }
+
+    div.iconos {
+        display: flex;
+        padding: 5px;
+    }
+
+    .icono {
+        font-size: 0.7rem;
+        padding: 5px;
+        height: 50px;
+        width: 30%;
+    }
+
+    div.iconos div.icono i {
+        font-size: 1rem;
+    }
+
+    div.iconoImg .imgTarjeta {
+        height: 120px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    /* Fin Tarjeta */
+
+    /* Inicio Footer */
+    .footer {
+        grid-area: footer;
+    }
+
+    .listas {
+        padding: 10px;
+    }
+
+    .listas ul {
+        padding: 10px;
+    }
+
+    .listas ul li a {
+        margin: 8px;
+        font-size: 0.9rem;
+    }
+
+    .listas ul li a img {
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    /* Fin Footer */
+}
+
+@media(max-width: 617px) {
+
+    .body {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 0px 1fr auto auto;
+        grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+            "header header header header header header header header header header header header"
+            "main main main main main main main main main main main main"
+            "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .caja {
+        padding: 9px 4px;
+        font-size: 0.7rem;
+    }
+
+    .navbar div a {
+        padding: 1px 5px;
+    }
+
+    .logo {
+        font-size: 1rem;
+        margin-top: 4px
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    header .portadaImg {
+        height: 200px;
+        padding-top: 0px;
+    }
+
+    header .banner {
+        height: 80px;
+    }
+
+    header .banner .titulo {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .banner {
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .huella {
+        font-size: 3rem;
+        padding-bottom: 235px;
+    }
+
+    /* Inicio Tarjeta */
+
+    div.tarjeta {
+        margin: 5px;
+        margin-bottom: 15px;
+        width: 150px;
+    }
+
+    div.iconos {
+        display: flex;
+        padding: 0px;
+    }
+
+    .icono {
+        font-size: 0.6rem;
+        padding: 5px;
+        height: 50px;
+        width: 30%;
+    }
+
+    div.iconos div.icono i {
+        font-size: 1rem;
+    }
+
+    div.iconoImg .imgTarjeta {
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    /* Fin Tarjeta */
+
+    /* Inicio Footer */
+    .footer {
+        grid-area: footer;
+    }
+
+    .listas {
+        padding: 10px;
+    }
+
+    .listas ul {
+        padding: 10px;
+    }
+
+    .listas ul li a {
+        margin: 8px;
+        font-size: 0.8rem;
+    }
+
+    .listas ul li a img {
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Fin Footer */
+}

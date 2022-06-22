@@ -6,24 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppAdoption</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/43148663fd.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="contenedor">
 
-    <header class="header">
-
-        <nav class="navbar">
-            <div class="logo"><a href="../index.html"><span>AppAdoption</span></a></div>
+    <nav class="navbar">
+        <div data-aos="fade-right"><a class="logo" href="../index.html"><span>AppAdoption</span></a></div>
+        <ul class="menu1">
+            <li><a data-aos="fade-left" class="">Menú</a>
+                <ul>
+                    <li><a href="../index.html">Página Principal</a></li>
+                    <li><a href="./perros.html">Perros</a></li>
+                    <li><a href="./gatos.html">Gatos</a></li>
+                    <li><a href="./otrasEspecies.html">Otras Especies</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contactanos.html">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu2">
             <div class="caja"><a href="../index.html">Página Principal</a></div>
             <div class="caja"><a href="./perros.html">Perros</a></div>
             <div class="caja"><a href="./gatos.html">Gatos</a></div>
             <div class="caja"><a href="./otrasEspecies.html">Otras Especies</a></div>
             <div class="caja"><a href="./nosotros.html">Sobre Nosotros</a></div>
-            <div class="caja lastCaja"><a href="./contactanos.html">Contáctanos</a></div>
-        </nav>
+            <div class="caja"><a href="./contactanos.html">Contactanos</a></div>
+        </div>
+    </nav>
+
+    <header class="header">
 
         <div class="banner">
             <h1 class="titulo">Otras especies en Adopción</h1>
@@ -31,21 +46,25 @@
 
     </header>
 
-    <section class="mascotaSemana tarjetas">
+    <main class="main">
 
-        <article>
-            <div>
-                <div class="fondo">
-                    <p class="titulo2"> No se han encontrado Mascotas</p>
-                    <div class="huella">
-                        <i class="fa-solid fa-paw"></i>
+        <section class="seccion tarjetas">
+
+            <article class="centrar">
+                <div>
+                    <div>
+                        <div class="huella">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <p> No se han encontrado Mascotas</p>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
+        </section>
 
-    </section>
+    </main>
+
 
     <footer class="footer">
         <div class="listas">
@@ -62,20 +81,26 @@
             </ul>
             <ul>
                 <p class="tituloFooter"><b>Información de AppAdoption</b></p>
-                <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
+                <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./contactanos.html">Centro de ayuda</a></li>
             </ul>
             <ul>
                 <p class="tituloFooter"><b>Rutas Principales</b></p>
-                <li><a href="./index.html">Página Principal</a></li>
-                <li><a href="./pages/perros.html">Adopción de Perros</a></li>
-                <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
-                <li><a href="./pages/otrasEspecies.html">Otras Mascotas</a></li>
+                <li><a href="../index.html">Página Principal</a></li>
+                <li><a href="./perros.html">Adopción de Perros</a></li>
+                <li><a href="./gatos.html">Adopción de Gatos</a></li>
+                <li><a href="./otrasEspecies.html">Otras Mascotas</a></li>
             </ul>
         </div>
 
         <p>Derechos reservados © (Copyright)</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
