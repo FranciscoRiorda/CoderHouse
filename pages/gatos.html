@@ -7,34 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppAdoption</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/43148663fd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body contenedor">
 
-    <nav class="navbar">
-        <div data-aos="fade-right"><a class="logo" href="../index.html"><span>AppAdoption</span></a></div>
-        <ul class="menu1">
-            <li><a data-aos="fade-left" class="">Menú</a>
-                <ul>
-                    <li><a href="../index.html">Página Principal</a></li>
-                    <li><a href="./perros.html">Perros</a></li>
-                    <li><a href="./gatos.html">Gatos</a></li>
-                    <li><a href="./otrasEspecies.html">Otras Especies</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./contactanos.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div data-aos="fade-right"><a class="logo zoom" href="index.html"><span>AppAdoption</span></a></div>
+            <button data-aos="fade-left" class="navbar-toggler bg-gradient" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbarNav" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Página Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./perros.html">Perros</a>
+                    </li>
+                    <li class="nav-item active2">
+                        <a class="nav-link" href="./gatos.html">Gatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./otrasEspecies.html">Otras Especies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactanos.html">Contacto</a>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-        <div class="menu2">
-            <div class="caja"><a href="../index.html">Página Principal</a></div>
-            <div class="caja"><a href="./perros.html">Perros</a></div>
-            <div class="caja"><a href="./gatos.html">Gatos</a></div>
-            <div class="caja"><a href="./otrasEspecies.html">Otras Especies</a></div>
-            <div class="caja"><a href="./nosotros.html">Sobre Nosotros</a></div>
-            <div class="caja"><a href="./contactanos.html">Contactanos</a></div>
+            </div>
         </div>
     </nav>
 
@@ -50,169 +61,1096 @@
 
         <section class="seccion tarjetas">
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Jack</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gato.jpg"
-                            alt="Foto de Jack. Gato de pelaje atigrado.">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
-                        </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>1 años</b>
-                        </div>
-                    </div>
-                    <a class="btn">Adoptar</a>
-                </div>
-            </article>
+            <div id="carouselExampleDark1" class="carousel carousel-dark slide carrusel1" data-bs-ride="carousel">
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Rocky</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gatoNegro.jpg"
-                            alt="Foto de Rocky. Gato de pelaje negro">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
-                        </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>2 años</b>
-                        </div>
-                    </div>
-                    <a class="btn">Adoptar</a>
-                </div>
-            </article>
+                <div class="carousel-inner">
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Sammy</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gata.png" alt="Gata de pelaje de tres colores">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gato.jpg" class="card-img-top"
+                                        alt="Foto de Jack. Gato de pelaje atigrado.">
+                                    <div class="card-body">
+                                        <h3>Jack</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>2 años</b>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoNegro.jpg" class="card-img-top"
+                                        alt="Foto de Rocky. Gato de pelaje negro">
+                                    <div class="card-body">
+                                        <h3>Rocky</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <a class="btn">Adoptar</a>
-                </div>
-            </article>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gata.png" class="card-img-top"
+                                        alt="Gata de pelaje de tres colores.">
+                                    <div class="card-body">
+                                        <h3>Sammy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoblanco.jpeg" class="card-img-top"
+                                        alt="Gato de pelaje blanco">
+                                    <div class="card-body">
+                                        <h3>Fryda</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatomanchas.jpg" class="card-img-top"
+                                        alt="Gato blanco con machas grises">
+                                    <div class="card-body">
+                                        <h3>Chloe</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>4 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatonaranja.png" class="card-img-top" alt="Gato naranja">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatogris.png" class="card-img-top"
+                                        alt="Gato de pleaje gris.">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatochico-min.png" class="card-img-top"
+                                        alt="Gato de pleaje marrón atigrado.">
+                                    <div class="card-body">
+                                        <h3>Troy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Fryda</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gatoblanco.jpeg"
-                            alt="Gato blanco con machas negras en la cara">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
-                        </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>2 años</b>
-                        </div>
-                    </div>
-                    <a class="btn">Adoptar</a>
                 </div>
-            </article>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Chloe</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gatomanchas.jpg" alt="Gato blanco con machas grises">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
-                        </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>4 años</b>
-                        </div>
-                    </div>
-                    <a class="btn">Adoptar</a>
-                </div>
-            </article>
+            <div id="carouselExampleDark2" class="carousel carousel-dark slide carrusel2" data-bs-ride="carousel">
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Lilly</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gatonaranja.png" alt="Gato naranja">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
-                        </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>1 años</b>
-                        </div>
-                    </div>
-                    <a class="btn">Adoptar</a>
-                </div>
-            </article>
+                <div class="carousel-inner">
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Lady</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gatogris.png" alt="Gato de pleaje gris.">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
-                        </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>1 años</b>
-                        </div>
-                    </div>
-                    <a class="btn">Adoptar</a>
-                </div>
-            </article>
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row g-4">
 
-            <article>
-                <div class="tarjeta zoom">
-                    <h3>Troy</h3>
-                    <div class="iconoImg">
-                        <img class="imgTarjeta" src="../assets/img/gatochico-min.png"
-                            alt="Gato de pleaje marrón atigrado.">
-                    </div>
-                    <div class="iconos">
-                        <div class="icono">
-                            <i class="fa-solid fa-syringe"></i>
-                            <b>Vacunas al día</b>
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gato.jpg" class="card-img-top"
+                                        alt="Foto de Jack. Gato de pelaje atigrado.">
+                                    <div class="card-body">
+                                        <h3>Jack</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoNegro.jpg" class="card-img-top"
+                                        alt="Foto de Rocky. Gato de pelaje negro">
+                                    <div class="card-body">
+                                        <h3>Rocky</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="icono">
-                            <i class="fa-solid fa-calendar-day"></i>
-                            <b>1 años</b>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gata.png" class="card-img-top"
+                                        alt="Gata de pelaje de tres colores.">
+                                    <div class="card-body">
+                                        <h3>Sammy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoblanco.jpeg" class="card-img-top"
+                                        alt="Gato de pelaje blanco">
+                                    <div class="card-body">
+                                        <h3>Fryda</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <a class="btn">Adoptar</a>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatomanchas.jpg" class="card-img-top"
+                                        alt="Gato blanco con machas grises">
+                                    <div class="card-body">
+                                        <h3>Chloe</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>4 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatonaranja.png" class="card-img-top" alt="Gato naranja">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatogris.png" class="card-img-top"
+                                        alt="Gato de pleaje gris.">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatochico-min.png" class="card-img-top"
+                                        alt="Gato de pleaje marrón atigrado.">
+                                    <div class="card-body">
+                                        <h3>Troy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-            </article>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="carouselExampleDark3" class="carousel carousel-dark slide carrusel3" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gato.jpg" class="card-img-top"
+                                        alt="Foto de Jack. Gato de pelaje atigrado.">
+                                    <div class="card-body">
+                                        <h3>Jack</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoNegro.jpg" class="card-img-top"
+                                        alt="Foto de Rocky. Gato de pelaje negro">
+                                    <div class="card-body">
+                                        <h3>Rocky</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gata.png" class="card-img-top"
+                                        alt="Gata de pelaje de tres colores.">
+                                    <div class="card-body">
+                                        <h3>Sammy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoblanco.jpeg" class="card-img-top"
+                                        alt="Gato de pelaje blanco">
+                                    <div class="card-body">
+                                        <h3>Fryda</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatomanchas.jpg" class="card-img-top"
+                                        alt="Gato blanco con machas grises">
+                                    <div class="card-body">
+                                        <h3>Chloe</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>4 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatonaranja.png" class="card-img-top" alt="Gato naranja">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatogris.png" class="card-img-top"
+                                        alt="Gato de pleaje gris.">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatochico-min.png" class="card-img-top"
+                                        alt="Gato de pleaje marrón atigrado.">
+                                    <div class="card-body">
+                                        <h3>Troy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="carouselExampleDark4" class="carousel carousel-dark slide carrusel4" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gato.jpg" class="card-img-top"
+                                        alt="Foto de Jack. Gato de pelaje atigrado.">
+                                    <div class="card-body">
+                                        <h3>Jack</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoNegro.jpg" class="card-img-top"
+                                        alt="Foto de Rocky. Gato de pelaje negro">
+                                    <div class="card-body">
+                                        <h3>Rocky</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gata.png" class="card-img-top"
+                                        alt="Gata de pelaje de tres colores.">
+                                    <div class="card-body">
+                                        <h3>Sammy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoblanco.jpeg" class="card-img-top"
+                                        alt="Gato de pelaje blanco">
+                                    <div class="card-body">
+                                        <h3>Fryda</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatomanchas.jpg" class="card-img-top"
+                                        alt="Gato blanco con machas grises">
+                                    <div class="card-body">
+                                        <h3>Chloe</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>4 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatonaranja.png" class="card-img-top" alt="Gato naranja">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatogris.png" class="card-img-top"
+                                        alt="Gato de pleaje gris.">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatochico-min.png" class="card-img-top"
+                                        alt="Gato de pleaje marrón atigrado.">
+                                    <div class="card-body">
+                                        <h3>Troy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="carouselExampleDark5" class="carousel carousel-dark slide carrusel5" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gato.jpg" class="card-img-top"
+                                        alt="Foto de Jack. Gato de pelaje atigrado.">
+                                    <div class="card-body">
+                                        <h3>Jack</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoNegro.jpg" class="card-img-top"
+                                        alt="Foto de Rocky. Gato de pelaje negro">
+                                    <div class="card-body">
+                                        <h3>Rocky</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gata.png" class="card-img-top"
+                                        alt="Gata de pelaje de tres colores.">
+                                    <div class="card-body">
+                                        <h3>Sammy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatoblanco.jpeg" class="card-img-top"
+                                        alt="Gato de pelaje blanco">
+                                    <div class="card-body">
+                                        <h3>Fryda</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>2 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatomanchas.jpg" class="card-img-top"
+                                        alt="Gato blanco con machas grises">
+                                    <div class="card-body">
+                                        <h3>Chloe</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>4 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row g-4">
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatonaranja.png" class="card-img-top" alt="Gato naranja">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatogris.png" class="card-img-top"
+                                        alt="Gato de pleaje gris.">
+                                    <div class="card-body">
+                                        <h3>Max</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col zoom centrar">
+                                <div class="card iconoImg tarjeta">
+                                    <img src="../assets/img/gatochico-min.png" class="card-img-top"
+                                        alt="Gato de pleaje marrón atigrado.">
+                                    <div class="card-body">
+                                        <h3>Troy</h3>
+                                        <div class="iconos">
+                                            <div class="icono">
+                                                <i class="fa-solid fa-syringe"></i>
+                                                <b>Vacunas al día</b>
+                                            </div>
+                                            <div class="icono">
+                                                <i class="fa-solid fa-calendar-day"></i>
+                                                <b>1 años</b>
+                                            </div>
+                                        </div>
+                                        <div class="btnFooter">
+                                            <button type="button" class="btn btn-primary col-12">Adoptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
         </section>
 
@@ -249,6 +1187,12 @@
         <p>Derechos reservados © (Copyright)</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

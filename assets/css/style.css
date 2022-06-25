@@ -1,8 +1,6 @@
-/* reset, para poner margenes en 0 */
 * {
     margin: 0px;
     padding: 0px;
-    /* A los padding los suma al 100% del ancho de la página */
     box-sizing: border-box;
 }
 
@@ -31,6 +29,7 @@ html {
 
 .main {
     grid-area: main;
+    margin-bottom: 70px;
 }
 
 .footer {
@@ -39,22 +38,45 @@ html {
 
 /* ////// */
 
-hr {
-    clear: left;
-}
-
 body {
     background-color: rgb(255, 255, 255);
     margin-bottom: 250px;
 }
 
-header .portadaImg {
-    background-image: url("../img/portada-mobile.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 200px;
-    box-shadow: 2px 2px 5px rgb(57, 57, 57);
+.carrusel2{
+    display: none;
+}
+
+.carrusel22{
+    display: none;
+}
+
+.carrusel3{
+    display: none;
+}
+
+.carrusel33{
+    display: none;
+}
+
+.carrusel4{
+    display: none;
+}
+
+.carrusel44{
+    display: none;
+}
+
+.carrusel5{
+    display: none;
+}
+
+.carrusel55{
+    display: none;
+}
+
+.carrusel66{
+    display: none;
 }
 
 .banner {
@@ -87,7 +109,7 @@ h2 {
 
 h3 {
     background-color: #61F539;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
     color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
@@ -110,17 +132,16 @@ span {
             var(--transp) 100%);
 }
 
-.seccion {
-    display: flex;
-}
-
 .huella {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 7rem;
     opacity: 0.5;
     margin-top: 50px;
+}
+
+.alert2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 .fondoNos {
@@ -149,76 +170,32 @@ span {
     width: 100%;
     height: auto;
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
-    margin: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .nosotrosImg2 {
     padding: 0px 5px;
 }
 
-/* Fin Varios */
-
 /* Barra de navegación */
-.navbar {
-    background-color: rgb(44, 52, 52);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    z-index: 1;
-}
 
-.menu2 {
-    display: none;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+nav.navbar div div ul li a {
+    color: rgb(255, 255, 255);
     font-family: 'Heebo', sans-serif;
 }
 
-nav ul li {
-    display: flex;
-    padding: 20px 50px;
+.navbar div div ul li {
+    padding: 12px;
 }
 
-nav ul li:hover ul {
-    display: block;
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: rgb(32, 32, 32);
-    margin-top: 38px;
-    right: 0.1%;
-    z-index: 1;
-
-}
-
-nav ul li ul li:hover {
+.navbar div div ul li:hover {
     background-color: rgb(44, 52, 52);
 }
 
-.caja {
+.active2 {
+    color: rgb(255, 255, 255);
     background-color: rgb(44, 52, 52);
-    padding: 15px 5px;
-}
-
-.caja:hover {
-    background-color: rgb(32, 32, 32);
-}
-
-.navbar div a {
-    color: #fff;
-    padding: 1px 6px;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -229,18 +206,31 @@ nav ul li ul li:hover {
     align-items: center;
 }
 
-/*Fin Barra de navegación */
+.logo:hover {
+    color: white;
+}
 
 /* Inicio Tarjeta */
+
+.seccion {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 div.tarjeta {
-    margin: 15px;
+    margin: 5px;
     border-radius: 10px;
     background-color: rgb(227, 225, 225);
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
@@ -257,26 +247,24 @@ div.tarjeta:hover {
 
 div.tarjeta img {
     width: 100%;
-    height: auto;
+    height: 150px;
 }
 
 div.iconoImg {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
-    margin-bottom: 10%;
+    object-fit: cover;
 }
 
 div.iconos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgb(227, 225, 225);
+    padding: 10px;
 }
 
 .icono {
     background-color: #61F539;
-    border: 1px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
     color: rgb(0, 0, 0);
@@ -287,7 +275,7 @@ div.iconos {
     align-items: flex-start;
     padding: 3px;
     height: 60px;
-    width: 25%;
+    width: 35%;
     text-align: center;
 }
 
@@ -302,39 +290,11 @@ div.iconos div.icono i {
     font-size: 1.3rem;
 }
 
-div.iconoImg .imgTarjeta {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
+div.btnFooter {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
 }
-
-/* Fin Tarjeta */
-
-/* Inicio Botones */
-
-.btn {
-    text-decoration: none;
-    border: 0px solid #000;
-    border-radius: 0px 0px 10px 10px;
-    background-color: #5B88FA;
-    box-shadow: 0px 0px 8px rgb(57, 57, 57);
-    color: #fff;
-    display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-    padding: 8px 16px;
-    margin-top: 20px;
-}
-
-.btn:hover {
-    cursor: pointer;
-    color: rgb(6, 130, 255);
-    background-color: rgb(255, 255, 255);
-}
-
-/* Fin Botones */
 
 /* Inicio Footer */
 
@@ -348,6 +308,7 @@ footer>p {
     background-color: rgb(44, 52, 52);
     color: white;
     text-align: center;
+    margin: 0px;
 }
 
 .tituloFooter {
@@ -380,7 +341,7 @@ footer>p {
 
 .listas ul li a img {
     width: 35px;
-    margin-left: 10px;
+    margin: 5px 10px;
 }
 
 .redes {
@@ -389,130 +350,75 @@ footer>p {
     justify-content: start;
 }
 
-
-/* Fin Footer */
-
 /* Inicio Formulario */
 
 form {
-    display: list-item;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    width: 100%;
+    padding: 15px;
+    margin-bottom: 50px;
 }
-
-.datos {
-    margin-bottom: 10px;
-}
-
-div.divForm.datos input {
-    margin: 0px 10px;
-}
-
-label {
-    width: 50%;
-    text-align: center;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
-.divForm {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
-}
-
-select {
-    width: 50%;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-
-}
-
-textarea {
-    width: 50%;
-    height: 120px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="number"] {
-    width: 180px;
-    padding: 3px 10px;
-    border: 1px solid #f6f6f6;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    margin: 8px 0;
-}
-
-form input[type="submit"] {
-    width: 30%;
-    padding: 8px 16px;
-    margin-top: 32px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    background-color: #000;
-}
-
-form input[type="submit"]:hover {
-    cursor: pointer;
-}
-
-/* Fin Formulario */
 
 /* Inicio Grids */
-@media(min-width: 576px) {}
-
-@media(min-width: 768px) {
-
-    span {
-        font-size: 1.2rem;
-    }
-
-    .menu1 {
+@media(min-width: 576px) {
+    .carrusel1 {
         display: none;
     }
-
-    .menu2 {
+    .carrusel2 {
         display: flex;
     }
 
-    header .portadaImg {
-        height: 250px;
+    .carrusel3 {
+        display: none;
     }
 
-    form input[type="text"],
-    form input[type="email"],
-    form input[type="number"] {
-        width: 220px;
+    .carrusel11 {
+        display: none;
+    }
+    .carrusel22 {
+        display: flex;
+    }
+
+    .carrusel33 {
+        display: none;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+    .carrusel2 {
+        display: none;
+    }
+
+    .carrusel22 {
+        display: none;
+    }
+
+    .carrusel3 {
+        display: flex;
+    }
+
+    .carrusel33 {
+        display: flex;
+    }
+
+    span {
+        font-size: 1.2rem;
     }
 
     .tituloFooter {
         padding-bottom: 20px;
         margin: 0px;
     }
-    
+
     .listas ul {
-        /* padding-top: 30px; */
         margin: 10px 35px;
     }
-    
+
     .listas ul li a img {
         width: 45px;
         margin-left: 10px;
     }
-    
+
     .redes {
         flex-direction: row;
     }
@@ -520,15 +426,15 @@ form input[type="submit"]:hover {
     .nosotrosP {
         padding: 15px;
         font-size: medium;
-        color: rgb(41, 41, 41);
+        color: rgba(41, 41, 41, 0.75);
         width: 50%;
-    
+
     }
-    
+
     .nosotrosImg2 {
         display: none;
     }
-    
+
     .nosotrosImg1 img {
         display: flex;
         flex-wrap: wrap;
@@ -537,42 +443,63 @@ form input[type="submit"]:hover {
         box-shadow: 2px 2px 5px rgb(57, 57, 57);
         margin: 15px 0px;
     }
-    
+
     .nosotrosImg1 {
         padding: 0px 15px;
     }
 }
 
 @media(min-width: 992px) {
-    span {
-        font-size: 1.5rem;
+
+
+    .carrusel3 {
+        display: none;
     }
 
-    div.menu2 div.caja a {
-        font-size: 1rem;
-        color: rgba(255, 255, 255, 0.901);
+    .carrusel33 {
+        display: none;
+    }
+
+    .carrusel4 {
+        display: flex;
+    }
+
+    .carrusel44 {
+        display: flex;
+    }
+
+    .main {
+        margin-bottom: 0px;
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
+
+    .navbarNav {
+        display: flex;
+        justify-content: end;
+    }
+
+    nav.navbar.navbar-expand-lg.bg-dark {
+        padding: 0%;
     }
 
     .navbar div a {
         padding: 1px 20px;
     }
 
-    header .portadaImg {
-        height: 320px;
-    }
-
     h1 {
         font-size: 1.8rem;
     }
-    
+
     h2 {
         font-size: 1.8rem;
     }
 
-    form input[type="text"],
-    form input[type="email"],
-    form input[type="number"] {
-        width: 300px;
+    .centrar2 {
+        display:flex;
+        justify-content: center;
     }
 
     .nosotrosImg1 img {
@@ -584,92 +511,31 @@ form input[type="submit"]:hover {
 
 @media(min-width: 1200px) {
 
-    header .portadaImg {
-        height: 380px;
+    .carrusel4 {
+        display: none;
+    }
+
+    .carrusel44 {
+        display: none;
+    }
+
+    .carrusel5 {
+        display: flex;
+    }
+
+    .carrusel55 {
+        display: flex;
     }
 
 }
 
 @media(min-width: 1400px) {
 
-    header .portadaImg {
-        height: 450px;
+    .carrusel55 {
+        display: none;
+    }
+
+    .carrusel66 {
+        display: flex;
     }
 }
-
-
-/* Fin Grids */
-
-
-
-
-
-
-
-
-/* Notas */
-
-
-/* Se maqueta con GRID y luego se acomodan los elementos con FLEXBOX */
-
-/* .flexbox {
-    display: flex;
-        *Dirección en filas o columnas
-    flex-direction: row;
-
-        *cuando no entra en la línea, la tarjeta se pone abajo;
-    flex-wrap: wrap; 
-
-        *Alinear caja verticalmente inicio centro y final. Strech = todo
-    align-items: center;
-
-        *Alinear caja horizontalmente inicio centro y final
-    justify-items: start;
-
-        *Alinear por margenes horizonales.
-    justify-content: space-between;
-
-        *Alinear por margenes verticales.
-    align-content: space-around;
-
-        *Alinear sobre su propio contenedor.
-    justify-self: start;
-    align-self: start;
-
-} */
-
-/* .grid {
-    display: grid;
-
-        *Define el largo de las columnas y cantidad de columnas según lo defina. 1º columna, 2º columna... en px, %, 1fr(fracciones), 
-        auto(se acomoda a la demanda). Con medidas relativas fr, rem, em % ayuda a ser responsive.
-    grid-template-columns: 200px auto 100px;
-
-        *Repite 12 columnas de 50px
-    grid-template-columns: repeat(12, 50px);
-
-        *Define el alto de las filas. 1º fila, 2º fila... en px o %
-    grid-template-rows: 100px auto auto 200px;
-
-        *Que el contenido mínimo de alto de la fila sea de %, px
-    grid-template-rows: minmax(max-content, 300px) minmax(200px, 1fr)
-
-        *Separación entre columnas
-    column-gap: 10px;
-
-        *Separación entre fila
-    row-gap: 10px;
-
-        *Para que la estructura quede como en el dibujo. none/.. > para que quede espeacio en blanco
-    grid-template-areas: "nav header header"
-                         "nav main aside"
-                         "nav section aside"
-                         "nav footer footer";
-
-        [
-            *En la clase de nav va así:
-    grid-area: nav;
-    background: red;
-    ]
-
-} */
