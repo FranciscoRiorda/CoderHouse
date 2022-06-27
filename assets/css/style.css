@@ -43,39 +43,39 @@ body {
     margin-bottom: 250px;
 }
 
-.carrusel2{
+.carrusel2 {
     display: none;
 }
 
-.carrusel22{
+.carrusel22 {
     display: none;
 }
 
-.carrusel3{
+.carrusel3 {
     display: none;
 }
 
-.carrusel33{
+.carrusel33 {
     display: none;
 }
 
-.carrusel4{
+.carrusel4 {
     display: none;
 }
 
-.carrusel44{
+.carrusel44 {
     display: none;
 }
 
-.carrusel5{
+.carrusel5 {
     display: none;
 }
 
-.carrusel55{
+.carrusel55 {
     display: none;
 }
 
-.carrusel66{
+.carrusel66 {
     display: none;
 }
 
@@ -135,11 +135,18 @@ span {
 .huella {
     font-size: 7rem;
     opacity: 0.5;
-    margin-top: 50px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .alert2 {
     width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.alert3 {
     display: flex;
     justify-content: center;
 }
@@ -213,20 +220,14 @@ nav.navbar div div ul li a {
 /* Inicio Tarjeta */
 
 .seccion {
-    display: flex;
     margin-bottom: 50px;
 }
 
 .centrar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
-}
-
-.tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 15px;
 }
 
 div.tarjeta {
@@ -234,7 +235,7 @@ div.tarjeta {
     border-radius: 10px;
     background-color: rgb(227, 225, 225);
     box-shadow: 2px 2px 5px rgb(57, 57, 57);
-    width: 200px;
+    width: 190px;
 }
 
 div.tarjeta:hover {
@@ -247,7 +248,7 @@ div.tarjeta:hover {
 
 div.tarjeta img {
     width: 100%;
-    height: 150px;
+    height: 130px;
 }
 
 div.iconoImg {
@@ -362,23 +363,17 @@ form {
     .carrusel1 {
         display: none;
     }
+
     .carrusel2 {
         display: flex;
-    }
-
-    .carrusel3 {
-        display: none;
     }
 
     .carrusel11 {
         display: none;
     }
+
     .carrusel22 {
         display: flex;
-    }
-
-    .carrusel33 {
-        display: none;
     }
 
 }
@@ -441,12 +436,8 @@ form {
         width: 100%;
         height: auto;
         box-shadow: 2px 2px 5px rgb(57, 57, 57);
-        margin: 15px 0px;
     }
 
-    .nosotrosImg1 {
-        padding: 0px 15px;
-    }
 }
 
 @media(min-width: 992px) {
@@ -462,10 +453,20 @@ form {
 
     .carrusel4 {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .carrusel44 {
         display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.carrusel4 div.col.zoom.centrar {
+        margin: 15px 30px;
+    }
+
+    div.carrusel44 div div.tarjeta {
+        margin: 10px;
     }
 
     .main {
@@ -497,17 +498,35 @@ form {
         font-size: 1.8rem;
     }
 
-    .centrar2 {
-        display:flex;
+    .nosotrosImg1 img {
+        width: 110%;
+    }
+
+    form div input.form-control{
+        width: 50%;
+    }
+
+    form div select.form-select {
+        width: 50%;
+    }
+
+    .form-check {
+        width: 80%;
+        display: flex;
         justify-content: center;
     }
 
-    .nosotrosImg1 img {
-        width: 100%;
+    .form-check-label {
+        padding: 0px 5px;
     }
 
-}
+    .centrarForm {
+        display: flex;
+        justify-content: center;
+    }
+    
 
+}
 
 @media(min-width: 1200px) {
 
@@ -525,17 +544,20 @@ form {
 
     .carrusel55 {
         display: flex;
+        flex-wrap: wrap;
     }
 
-}
-
-@media(min-width: 1400px) {
-
-    .carrusel55 {
-        display: none;
-    }
-
-    .carrusel66 {
+    .carrusel5 {
         display: flex;
+        flex-wrap: wrap;
     }
+
+    div.carrusel55 div div.tarjeta {
+        margin: 10px;
+    }
+
+    div.carrusel5 div.col.zoom.centrar {
+        margin: 15px 50px;
+    }
+
 }
