@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar navbar"
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    margin-bottom: 70px;
+}
+
+.footer {
+    grid-area: footer;
+}
+

@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+body {
+    background-color: $colorBlanco;
+    margin-bottom: 250px;
+    h1 {
+        color: $colorBlanco;
+        font-family: $fuenteTitulos;
+        font-size: 1.8rem;
+        text-align: center;
+        text-shadow: $sombra;
+    }
+    h2 {
+        color: $colorBlanco;
+        font-family: $fuenteTitulos;
+        font-size: 1.8rem;
+        text-shadow: $sombra;
+    }
+    
+    h3 {
+        background-color: $colorVerde;
+        border-radius: 10px 10px 10px 10px;
+        color: $colorBlanco;
+        font-family: $fuenteNombre;
+        font-size: 1.3rem;
+        text-align: center;
+        text-shadow: $sombra;
+        opacity: 0.9;
+    }
+}
+
+.nosotrosImg1 img {
+    display: none;
+}
+
+

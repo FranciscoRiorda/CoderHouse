@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+body {
+    .fondoNos {
+        background-color: $fondoNosotros;
+    }
+    .alert3 {
+        display: flex;
+        justify-content: center;
+    
+        .alert2 {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .nosotros {
+        margin: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .nosotrosP {
+        padding: 15px;
+        font-size: medium;
+        color: rgb(41, 41, 41);
+    
+    }
+    .nosotrosImg2 img {
+        width: 100%;
+        height: auto;
+        box-shadow: $sombra;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .nosotrosImg2 {
+        padding: 0px 5px;
+    }
+}
+
+
+
+

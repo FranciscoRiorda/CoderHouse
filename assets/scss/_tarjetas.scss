@@ -1,0 +1,81 @@
+@import "variables.scss";
+
+.seccion {
+    margin-bottom: 50px;
+
+    div {
+        .zoom {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .centrar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    div {
+        .tarjeta {
+            margin: 5px;
+            border-radius: 10px;
+            background-color: $colorGrisClaro;
+            box-shadow: $sombra;
+            width: 190px;
+
+            img {
+                width: 100%;
+                height: 130px;
+            }
+        }
+
+        .iconoImg {
+            display: flex;
+            box-shadow: $sombraClara;
+            object-fit: cover;
+        }
+    }
+
+    div.iconos {
+        display: flex;
+        justify-content: space-around;
+        background-color: $colorGrisClaro;
+        padding: 10px;
+
+        .icono {
+            background-color: $colorVerde;
+            border-radius: 5px;
+            box-shadow: $sombraClara;
+            color: $colorNegro;
+            font-size: 0.7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 3px;
+            height: 60px;
+            width: 35%;
+            text-align: center;
+
+            &:hover {
+                background-color: $colorVerdeHover;
+            }
+
+            i {
+                background-color: $colorBlanco;
+                border-radius: 15px;
+                color: $colorNegro;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    div.btnFooter {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}

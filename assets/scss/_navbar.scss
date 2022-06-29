@@ -1,0 +1,29 @@
+nav.navbar div div ul li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar div div ul li {
+    padding: 12px;
+}
+
+.navbar div div ul li:hover {
+    background-color: rgb(44, 52, 52);
+}
+
+.active2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 52, 52);
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo:hover {
+    color: white;
+}

@@ -1,0 +1,33 @@
+span {
+    font-size: 1rem;
+    --cor: rgba(200, 0, 0, 1);
+    --transp: rgba(0, 0, 0, 0);
+    background: var(--cor);
+    background: linear-gradient(180deg,
+            var(--transp) 0%,
+            var(--transp) 53%,
+            var(--cor) 54%,
+            var(--cor) 94%,
+            var(--transp) 95%,
+            var(--transp) 100%);
+}
+
+.banner {
+    background-image: url("../img/homePets2-min.png");
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(57, 57, 57);
+    width: 100%;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.huella {
+    font-size: 7rem;
+    opacity: 0.5;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}

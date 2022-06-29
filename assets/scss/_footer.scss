@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .listas {
+        background-color: $colorPrincipal;
+        display: flex;
+        justify-content: space-evenly;
+
+        ul {
+            list-style: none;
+            padding-top: 25px;
+
+            li a {
+                text-decoration: none;
+                color: $colorGris;
+                &:hover{
+                    color: $colorBlanco;
+                    text-decoration: underline;
+                }
+                img {
+                    width: 35px;
+                    margin: 5px 10px;
+                }
+            }
+
+            p.tituloFooter {
+                color: $colorGris;
+                padding-bottom: 10px;
+                text-align: start;
+            }
+        }
+    }
+
+    p.derechos {
+        background-color: $colorPrincipal;
+        color: $colorBlanco;
+        text-align: center;
+        margin: 0px;
+    }
+}
