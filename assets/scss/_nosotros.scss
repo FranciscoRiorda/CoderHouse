@@ -1,9 +1,11 @@
 @import "variables.scss";
 
-body {
-    .fondoNos {
-        background-color: $fondoNosotros;
-    }
+body.fondoNos {
+    background-color: $fondoNosotros;
+}
+
+main {
+
     .alert3 {
         display: flex;
         justify-content: center;
@@ -24,22 +26,17 @@ body {
     .nosotrosP {
         padding: 15px;
         font-size: medium;
-        color: rgb(41, 41, 41);
+        color: rgba(41, 41, 41, 0.649);
     
     }
     .nosotrosImg2 img {
         width: 100%;
         height: auto;
-        box-shadow: $sombra;
-        margin-top: 15px;
+        box-shadow: $sombraClara;
+        padding: 5px;
         margin-bottom: 50px;
     }
     
-    .nosotrosImg2 {
-        padding: 0px 5px;
-    }
 }
-
-
 
 

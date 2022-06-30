@@ -1,40 +1,8 @@
-@media(min-width: 576px) {
-    .carrusel1 {
-        display: none;
-    }
+@import "variables.scss";
 
-    .carrusel2 {
-        display: flex;
-    }
-
-    .carrusel11 {
-        display: none;
-    }
-
-    .carrusel22 {
-        display: flex;
-    }
-
-}
+@media(min-width: 576px) {}
 
 @media(min-width: 768px) {
-
-    .carrusel2 {
-        display: none;
-    }
-
-    .carrusel22 {
-        display: none;
-    }
-
-    .carrusel3 {
-        display: flex;
-    }
-
-    .carrusel33 {
-        display: flex;
-    }
-
     span {
         font-size: 1.2rem;
     }
@@ -79,40 +47,21 @@
             flex-wrap: wrap;
             width: 100%;
             height: auto;
-            box-shadow: 2px 2px 5px rgb(57, 57, 57);
+            padding: 5px;
+            margin-top: 15px;
+            box-shadow: $sombraClara;
         }
     }
 }
 
 @media(min-width: 992px) {
 
-    .main {
-        margin-bottom: 0px;
-
-        .carrusel3 {
-            display: none;
-        }
-
-        .carrusel33 {
-            display: none;
-        }
-
-        .carrusel4 {
+    main {
+        .contenedor-cards2 {
             display: flex;
             flex-wrap: wrap;
-        }
-
-        .carrusel44 {
-            display: flex;
-            flex-wrap: wrap;
-
-            div.col.zoom.centrar {
-                margin: 15px 30px;
-
-                div.tarjeta {
-                    margin: 10px;
-                }
-            }
+            justify-content: space-around;
+            overflow-x: hidden;
         }
     }
 
@@ -146,34 +95,18 @@
         width: 110%;
     }
 
-    form {
-
-        .form-check {
-            width: 80%;
-            display: flex;
-            justify-content: center;
-
-            .form-check-label {
-                padding: 0px 5px;
-            }
-        }
-
-    }
-
 }
 
 @media(min-width: 1200px) {
 
     .main {
-        
-        .carrusel4 {
-            display: none;
-        }
 
-        .carrusel5 {
+        .contenedor-cards {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-around;
+            overflow-x: hidden;
         }
     }
+
 
 }

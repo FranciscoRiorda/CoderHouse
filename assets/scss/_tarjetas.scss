@@ -1,24 +1,28 @@
 @import "variables.scss";
 
-.seccion {
-    margin-bottom: 50px;
-
     .contenedor-cards {
-        padding: 20px;
-        margin: 0px 10px;
+        margin: 30px 10px;
 
         display: flex;
-        justify-content: center;
-        overflow-x: auto;
+        justify-content: start;
+        overflow-x: scroll;
 
         .cardsArticle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-width: 250px;
         }
     }
 
+    .contenedor-cards2 {
+        margin: 30px 10px;
+
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+
+        .cardsArticle {
+            min-width: 250px;
+        }
+    }
 
     div {
         .zoom {
@@ -95,4 +99,3 @@
         display: flex;
         justify-content: center;
     }
-}
