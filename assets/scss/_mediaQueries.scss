@@ -39,98 +39,99 @@
         font-size: 1.2rem;
     }
 
-    .tituloFooter {
-        padding-bottom: 20px;
-        margin: 0px;
-    }
+    footer {
+        .listas {
+            ul {
+                margin: 10px 35px;
 
-    .listas ul {
-        margin: 10px 35px;
-    }
+                li a img {
+                    width: 45px;
+                    margin-left: 10px;
+                }
 
-    .listas ul li a img {
-        width: 45px;
-        margin-left: 10px;
-    }
+                .redes {
+                    display: flex;
+                }
+            }
 
-    .redes {
-        flex-direction: row;
-    }
-
-    .nosotrosP {
-        padding: 15px;
-        font-size: medium;
-        color: rgba(41, 41, 41, 0.75);
-        width: 50%;
+            .tituloFooter {
+                padding-bottom: 20px;
+                margin: 0px;
+            }
+        }
 
     }
 
-    .nosotrosImg2 {
-        display: none;
+    main {
+        .nosotrosP {
+            padding: 15px;
+            font-size: medium;
+            color: rgba(41, 41, 41, 0.75);
+            width: 50%;
+        }
+
+        .nosotrosImg2 {
+            display: none;
+        }
+
+        .nosotrosImg1 img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            box-shadow: 2px 2px 5px rgb(57, 57, 57);
+        }
     }
-
-    .nosotrosImg1 img {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: auto;
-        box-shadow: 2px 2px 5px rgb(57, 57, 57);
-    }
-
-    .redes {
-    display: flex;
-}
-
 }
 
 @media(min-width: 992px) {
 
-
-    .carrusel3 {
-        display: none;
-    }
-
-    .carrusel33 {
-        display: none;
-    }
-
-    .carrusel4 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .carrusel44 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    div.carrusel44 div.col.zoom.centrar {
-        margin: 15px 30px;
-    }
-
-    div.carrusel44 div div.tarjeta {
-        margin: 10px;
-    }
-
     .main {
         margin-bottom: 0px;
-    }
 
-    span {
-        font-size: 1.3rem;
-    }
+        .carrusel3 {
+            display: none;
+        }
 
-    .navbarNav {
-        display: flex;
-        justify-content: end;
+        .carrusel33 {
+            display: none;
+        }
+
+        .carrusel4 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .carrusel44 {
+            display: flex;
+            flex-wrap: wrap;
+
+            div.col.zoom.centrar {
+                margin: 15px 30px;
+
+                div.tarjeta {
+                    margin: 10px;
+                }
+            }
+        }
     }
 
     nav.navbar.navbar-expand-lg.bg-dark {
         padding: 0%;
-    }
 
-    .navbar div a {
-        padding: 1px 20px;
+        span {
+            font-size: 1.3rem;
+        }
+
+        .navbarNav {
+            display: flex;
+            justify-content: end;
+        }
+
+        a {
+            padding: 1px 10px;
+        }
+
     }
 
     h1 {
@@ -145,62 +146,34 @@
         width: 110%;
     }
 
-    form div input.form-control{
-        width: 50%;
-    }
+    form {
 
-    form div select.form-select {
-        width: 50%;
-    }
+        .form-check {
+            width: 80%;
+            display: flex;
+            justify-content: center;
 
-    .form-check {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
+            .form-check-label {
+                padding: 0px 5px;
+            }
+        }
 
-    .form-check-label {
-        padding: 0px 5px;
     }
-
-    .centrarForm {
-        display: flex;
-        justify-content: center;
-    }
-    
 
 }
 
 @media(min-width: 1200px) {
 
-    .carrusel4 {
-        display: none;
-    }
+    .main {
+        
+        .carrusel4 {
+            display: none;
+        }
 
-    .carrusel44 {
-        display: none;
-    }
-
-    .carrusel5 {
-        display: flex;
-    }
-
-    .carrusel55 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .carrusel5 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    div.carrusel55 div div.tarjeta {
-        margin: 10px;
-    }
-
-    div.carrusel55 div.col.zoom.centrar {
-        margin: 15px 50px;
+        .carrusel5 {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
 }
