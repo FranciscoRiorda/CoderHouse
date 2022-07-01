@@ -16,15 +16,15 @@
 
 <body class="body contenedor">
 
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <div data-aos="fade-right"><a class="logo zoom" href="index.html"><span>AppAdoption</span></a></div>
-            <button data-aos="fade-left" class="navbar-toggler bg-gradient" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    <nav class="navbar navbar-expand-lg bg-dark container-fluid">
+        <div class="row col-12">
+            <div class="col-10 col-sm-11 col-lg-3" data-aos="fade-right"><a class="logo zoom" href="index.html"><span>AppAdoption</span></a></div>
+            <button data-aos="fade-left" class="navbar-toggler bg-gradient col-2 col-sm-1" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navbarNav" id="navbarNav">
+            <div class="collapse navbar-collapse navbarNav col-9" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active2">
                         <a class="nav-link " aria-current="page" href="index.html">Página Principal</a>
@@ -49,45 +49,48 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header class="header container-fluid">
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active data-bs-interval='10000' ">
+                        <img src="./assets/img/carousel3.jpg" class="d-block w-100 alto"
+                            alt="Perro en la playa con su dueña">
+                    </div>
+                    <div class="carousel-item data-bs-interval='10000'">
+                        <img src="./assets/img/carousel2.jpg" class="d-block w-100 alto" alt="Perro en la nieve">
+                    </div>
+                    <div class="carousel-item data-bs-interval='10000'">
+                        <img src="./assets/img/carousel1.jpg" class="d-block w-100 alto" alt="Cinco perros en la playa">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active data-bs-interval='10000' ">
-                    <img src="./assets/img/carousel3.jpg" class="d-block w-100 alto"
-                        alt="Perro en la playa con su dueña">
-                </div>
-                <div class="carousel-item data-bs-interval='10000'">
-                    <img src="./assets/img/carousel2.jpg" class="d-block w-100 alto" alt="Perro en la nieve">
-                </div>
-                <div class="carousel-item data-bs-interval='10000'">
-                    <img src="./assets/img/carousel1.jpg" class="d-block w-100 alto" alt="Cinco perros en la playa">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
+        
 
     </header>
 
 
-    <main class="main">
+    <main class="main container-fluid">
 
         <section class="seccion">
 
@@ -258,7 +261,7 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <article class="cardsArticle">
                     <div class="zoom centrar">
                         <div class="card iconoImg tarjeta">
@@ -360,7 +363,8 @@
                 <article class="cardsArticle">
                     <div class="zoom centrar">
                         <div class="card iconoImg tarjeta">
-                            <img src="./assets/img/perromarron.jpg" class="card-img-top" alt="Perro de pelaje marrón claro">
+                            <img src="./assets/img/perromarron.jpg" class="card-img-top"
+                                alt="Perro de pelaje marrón claro">
                             <div class="card-body">
                                 <h3>Oliver</h3>
                                 <div class="iconos">
@@ -405,7 +409,7 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <article class="cardsArticle">
                     <div class="zoom centrar">
                         <div class="card iconoImg tarjeta">
@@ -429,7 +433,7 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <article class="cardsArticle">
                     <div class="zoom centrar">
                         <div class="card iconoImg tarjeta">
@@ -453,7 +457,7 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <article class="cardsArticle">
                     <div class="zoom centrar">
                         <div class="card iconoImg tarjeta">
@@ -535,36 +539,39 @@
     </main>
 
     <!-- pié de página -->
-    <footer class="footer">
-        <div class="listas">
-            <ul>
-                <p class="tituloFooter"><b>Nuestras Redes</b></p>
-                <div class="redes">
-                    <li class="zoom"><a href=""><img src="./assets/img/facebook-min.png"
-                                alt="ir a facebook de AppAdoption"></a></li>
-                    <li class="zoom"><a href=""><img src="./assets/img/instagram-min.png"
-                                alt="ir a instagram de AppAdoption"></a></li>
-                    <li class="zoom"><a href=""><img src="./assets/img/whatsapp-min.png"
-                                alt="ir a whatsapp de AppAdoption"></a></li>
-                </div>
-            </ul>
-            <ul>
-                <p class="tituloFooter"><b>Información de AppAdoption</b></p>
-                <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
-            </ul>
-            <ul>
-                <p class="tituloFooter"><b>Rutas Principales</b></p>
-                <li><a href="./index.html">Página Principal</a></li>
-                <li><a href="./pages/perros.html">Adopción de Perros</a></li>
-                <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
-                <li><a href="./pages/otrasEspecies.html">Otras Mascotas</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <p class="derechos">Derechos reservados © (Copyright)</p>
-        </div>
+    <footer class="footer container-fluid">
+        <section>
+            <div class="listas">
+                <ul>
+                    <p class="tituloFooter"><b>Nuestras Redes</b></p>
+                    <div class="redes">
+                        <li class="zoom"><a href=""><img src="./assets/img/facebook-min.png"
+                                    alt="ir a facebook de AppAdoption"></a></li>
+                        <li class="zoom"><a href=""><img src="./assets/img/instagram-min.png"
+                                    alt="ir a instagram de AppAdoption"></a></li>
+                        <li class="zoom"><a href=""><img src="./assets/img/whatsapp-min.png"
+                                    alt="ir a whatsapp de AppAdoption"></a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <p class="tituloFooter"><b>Información de AppAdoption</b></p>
+                    <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="./pages/contactanos.html">Centro de ayuda</a></li>
+                </ul>
+                <ul>
+                    <p class="tituloFooter"><b>Rutas Principales</b></p>
+                    <li><a href="./index.html">Página Principal</a></li>
+                    <li><a href="./pages/perros.html">Adopción de Perros</a></li>
+                    <li><a href="./pages/gatos.html">Adopción de Gatos</a></li>
+                    <li><a href="./pages/otrasEspecies.html">Otras Mascotas</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <p class="derechos">Derechos reservados © (Copyright)</p>
+            </div>
+        </section>
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

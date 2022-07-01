@@ -17,22 +17,26 @@ html {
         "header header"
         "main main"
         "footer footer";
+
+        .navbar {
+            grid-area: navbar;
+        }
+        
+        .header {
+            grid-area: header;
+            padding: 0%;
+            margin-bottom: 1%;
+        }
+        
+        .main {
+            grid-area: main;
+        }
+        
+        .footer {
+            grid-area: footer;
+            padding: 0%;
+        }
 }
 
-.navbar {
-    grid-area: navbar;
-}
 
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-    margin-bottom: 70px;
-}
-
-.footer {
-    grid-area: footer;
-}
 

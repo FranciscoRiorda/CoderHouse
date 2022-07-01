@@ -15,28 +15,25 @@ html {
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "navbar navbar" "header header" "main main" "footer footer";
 }
-
-.navbar {
+.contenedor .navbar {
   grid-area: navbar;
 }
-
-.header {
+.contenedor .header {
   grid-area: header;
+  padding: 0%;
+  margin-bottom: 1%;
 }
-
-.main {
+.contenedor .main {
   grid-area: main;
-  margin-bottom: 70px;
 }
-
-.footer {
+.contenedor .footer {
   grid-area: footer;
+  padding: 0%;
 }
 
 footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
 }
 footer .listas {
   background-color: rgb(44, 52, 52);
@@ -78,7 +75,7 @@ form {
 
 body {
   background-color: rgb(255, 255, 255);
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 }
 body h1 {
   color: rgb(255, 255, 255);
@@ -238,8 +235,6 @@ nav.navbar div div ul li a {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   display: flex;
-  justify-content: start;
-  align-items: center;
 }
 
 .logo:hover {
