@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppAdoption</title>
+    <meta name="description" content="Centro de adopión de mascotas que necesitan un hogar">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>AppAdoption - Centro de Adopción de Mascotas</title>
 </head>
 
 <body class="body contenedor fondoNos">
@@ -51,6 +54,13 @@
 
     <header class="header container-fluid">
 
+        <div class="breadcrumbs">
+            <ul class="">
+                <li><a href="../index.html">Página Principal</a></li>
+                < <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+                    < </ul>
+        </div>
+
         <div class="banner">
             <h1 class="titulo">¿Quiénes Somos?</h1>
         </div>
@@ -58,7 +68,7 @@
     </header>
 
     <main class="main container-fluid">
-        <section>
+        <section class="seccionNosotros">
             <div class="nosotros">
                 <p class="nosotrosP"><b> AppAdoption es un centro de adopción de mascotas especializada en recatar y
                         brindar un
@@ -103,29 +113,33 @@
 
     <footer class="footer container-fluid">
         <div class="listas">
-            <ul>
+            <div>
                 <p class="tituloFooter"><b>Nuestras Redes</b></p>
-                <div class="redes">
+                <ul class="redes">
                     <li class="zoom"><a href=""><img src="../assets/img/facebook-min.png"
                                 alt="ir a facebook de AppAdoption"></a></li>
                     <li class="zoom"><a href=""><img src="../assets/img/instagram-min.png"
                                 alt="ir a instagram de AppAdoption"></a></li>
                     <li class="zoom"><a href=""><img src="../assets/img/whatsapp-min.png"
                                 alt="ir a whatsapp de AppAdoption"></a></li>
-                </div>
-            </ul>
-            <ul>
+                </ul>
+            </div>
+            <div>
                 <p class="tituloFooter"><b>Información de AppAdoption</b></p>
-                <li><a href="./nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./contactanos.html">Centro de ayuda</a></li>
-            </ul>
-            <ul>
+                <ul>
+                    <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="./contactanos.html">Centro de ayuda</a></li>
+                </ul>
+            </div>
+            <div>
                 <p class="tituloFooter"><b>Rutas Principales</b></p>
-                <li><a href="../index.html">Página Principal</a></li>
-                <li><a href="./perros.html">Adopción de Perros</a></li>
-                <li><a href="./gatos.html">Adopción de Gatos</a></li>
-                <li><a href="./otrasEspecies.html">Otras Mascotas</a></li>
-            </ul>
+                <ul>
+                    <li><a href="../index.html">Página Principal</a></li>
+                    <li><a href="./perros.html">Adopción de Perros</a></li>
+                    <li><a href="./gatos.html">Adopción de Gatos</a></li>
+                    <li><a href="./otrasEspecies.html">Otras Mascotas</a></li>
+                </ul>
+            </div>
         </div>
 
         <div>
@@ -133,6 +147,7 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/43148663fd.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>

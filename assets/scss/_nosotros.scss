@@ -7,20 +7,15 @@ body.fondoNos {
 main {
 
     .alert3 {
-        display: flex;
-        justify-content: center;
-    
+        @include propiedadesFlex(flex, row, nowrap, center, center);
+        
         .alert2 {
-            width: 80%;
-            display: flex;
-            justify-content: center;
+            @extend .alert3;
         }
     }
     .nosotros {
+        @include propiedadesFlex(flex, row, wrap, space-around, start);
         margin: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
     
     .nosotrosP {
@@ -32,7 +27,7 @@ main {
     .nosotrosImg2 img {
         width: 100%;
         height: auto;
-        box-shadow: $sombraClara;
+        box-shadow: map-get($sombra , sombraClara );
         padding: 5px;
         margin-bottom: 50px;
     }

@@ -1,27 +1,27 @@
-nav.navbar div div ul li a {
-    color: rgb(255, 255, 255);
-    font-family: 'Heebo', sans-serif;
-}
+@import 'variables.scss';
 
 .navbar div div ul li {
     padding: 12px;
-}
-
-.navbar div div ul li:hover {
-    background-color: rgb(44, 52, 52);
+    &:hover{
+        background-color: map-get($color , principal);
+    }
+    a {
+        color: map-get($color , blanco);
+        font-family: map-get($fuente , nav );
+    }
 }
 
 .active2 {
-    color: rgb(255, 255, 255);
-    background-color: rgb(44, 52, 52);
+    color: map-get($color , blanco);
+    background-color: map-get($color , principal);
 }
 
 .logo {
-    color: rgb(255, 255, 255);
+    @include propiedadesFlex(flex, row, nowrap, start, center);
+    color: map-get($color , blanco);
     font-size: 1.5rem;
-    display: flex;
+    &:hover {
+        color: map-get($color , blanco);
+    }
 }
 
-.logo:hover {
-    color: white;
-}

@@ -13,12 +13,10 @@ span {
 }
 
 .banner {
+    @include propiedadesFlex(flex,row,nowrap,center,center);
     background-image: url("../img/homePets2-min.png");
     height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 5px rgb(57, 57, 57);
+    box-shadow: map-get($sombra , sombra );
     width: 100%;
     z-index: -1;
     margin-bottom: 50px;

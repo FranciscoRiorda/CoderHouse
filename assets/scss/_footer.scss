@@ -5,38 +5,43 @@ footer {
     bottom: 0;
 
     .listas {
-        background-color: $colorPrincipal;
-        display: flex;
-        justify-content: space-evenly;
+        @include propiedadesFlex(flex,row,nowrap,space-evenly,start);
+        background-color: map-get($color, principal);
+
+        p.tituloFooter {
+            color: map-get($color, gris);
+            padding-bottom: 10px;
+            text-align: center;
+            padding-top: 25px;
+        }
 
         ul {
             list-style: none;
-            padding-top: 25px;
+            text-align: center;
 
-            li a {
+            li  {
+                @include propiedadesFlex(flex,row,nowrap,start,center);
+            }
+            a {
                 text-decoration: none;
-                color: $colorGris;
-                &:hover{
-                    color: $colorBlanco;
+                color: map-get($color, gris);
+
+                &:hover {
+                    color: map-get($color, blanco);
                     text-decoration: underline;
                 }
+
                 img {
                     width: 35px;
                     margin: 5px 10px;
                 }
             }
-
-            p.tituloFooter {
-                color: $colorGris;
-                padding-bottom: 10px;
-                text-align: start;
-            }
         }
     }
 
     p.derechos {
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($color, principal);
+        color: map-get($color, blanco);
         text-align: center;
         margin: 0px;
     }

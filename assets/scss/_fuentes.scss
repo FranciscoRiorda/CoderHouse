@@ -1,36 +1,51 @@
 @import "variables.scss";
 
 body {
-    background-color: $colorBlanco;
+    background-color: map-get($color , blanco);
     margin-bottom: 200px;
+
     h1 {
-        color: $colorBlanco;
-        font-family: $fuenteTitulos;
+        color: map-get($color , blanco);
+        font-family: map-get($fuente , titulos );
         font-size: 1.8rem;
         text-align: center;
-        text-shadow: $sombra;
+        text-shadow: map-get($sombra , sombra );
     }
-    h2 {
-        color: $colorBlanco;
-        font-family: $fuenteTitulos;
-        font-size: 1.8rem;
-        text-shadow: $sombra;
+
+    .banner h2 {
+        color: map-get($color , blanco);
+        font-family: map-get($fuente , titulos );
+        font-size: 1.2rem;
+        text-shadow: map-get($sombra , sombra );
     }
-    
+
     h3 {
-        background-color: $colorVerde;
+        background-color: map-get($color , verde);
         border-radius: 10px 10px 10px 10px;
-        color: $colorBlanco;
-        font-family: $fuenteNombre;
+        color: map-get($color , blanco);
+        font-family: map-get($fuente , nombre );
         font-size: 1.3rem;
         text-align: center;
-        text-shadow: $sombra;
+        text-shadow: map-get($sombra , sombra );
         opacity: 0.9;
     }
+
+    .infoIndex {
+        display: none;
+    }
+
+    .inconoIndex{
+        font-size: 2rem;
+        padding: 5px;
+        background-color: map-get($color , blanco );
+    }
+
+    .carrusel {
+        box-shadow: map-get($sombra , sombraClara );
+    }
+
 }
 
 .nosotrosImg1 img {
     display: none;
 }
-
-

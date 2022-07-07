@@ -36,30 +36,41 @@ footer {
   bottom: 0;
 }
 footer .listas {
-  background-color: rgb(44, 52, 52);
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
+  align-items: start;
+  background-color: rgb(44, 52, 52);
+}
+footer .listas p.tituloFooter {
+  color: rgb(140, 139, 139);
+  padding-bottom: 10px;
+  text-align: center;
+  padding-top: 25px;
 }
 footer .listas ul {
   list-style: none;
-  padding-top: 25px;
+  text-align: center;
 }
-footer .listas ul li a {
+footer .listas ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+footer .listas ul a {
   text-decoration: none;
   color: rgb(140, 139, 139);
 }
-footer .listas ul li a:hover {
+footer .listas ul a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-footer .listas ul li a img {
+footer .listas ul a img {
   width: 35px;
   margin: 5px 10px;
-}
-footer .listas ul p.tituloFooter {
-  color: rgb(140, 139, 139);
-  padding-bottom: 10px;
-  text-align: start;
 }
 footer p.derechos {
   background-color: rgb(44, 52, 52);
@@ -79,26 +90,37 @@ body {
 }
 body h1 {
   color: rgb(255, 255, 255);
-  font-family: "Patrick Hand", cursive;
+  font-family: "Patrick Hand";
   font-size: 1.8rem;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
 }
-body h2 {
+body .banner h2 {
   color: rgb(255, 255, 255);
-  font-family: "Patrick Hand", cursive;
-  font-size: 1.8rem;
+  font-family: "Patrick Hand";
+  font-size: 1.2rem;
   text-shadow: 2px 2px 4px #000000;
 }
 body h3 {
   background-color: #61F539;
   border-radius: 10px 10px 10px 10px;
   color: rgb(255, 255, 255);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium";
   font-size: 1.3rem;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
   opacity: 0.9;
+}
+body .infoIndex {
+  display: none;
+}
+body .inconoIndex {
+  font-size: 2rem;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+body .carrusel {
+  box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
 }
 
 .nosotrosImg1 img {
@@ -114,12 +136,14 @@ span {
 }
 
 .banner {
-  background-image: url("../img/homePets2-min.png");
-  height: 60px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 5px rgb(57, 57, 57);
+  background-image: url("../img/homePets2-min.png");
+  height: 60px;
+  box-shadow: 2px 2px 4px #000000;
   width: 100%;
   z-index: -1;
   margin-bottom: 50px;
@@ -133,24 +157,27 @@ span {
   justify-content: center;
 }
 
+@media (min-width: 576px) {
+  body .banner h2 {
+    font-size: 1.8rem;
+  }
+  body main {
+    margin-bottom: 10%;
+  }
+  body main .infoIndex {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   span {
     font-size: 1.2rem;
   }
 
-  footer .listas ul {
-    margin: 10px 35px;
-  }
-  footer .listas ul li a img {
-    width: 45px;
-    margin-left: 10px;
-  }
-  footer .listas ul .redes {
+  footer ul.redes {
     display: flex;
   }
-  footer .listas .tituloFooter {
-    padding-bottom: 20px;
-    margin: 0px;
+  footer ul.redes li a img {
+    width: 45px;
   }
 
   main .nosotrosP {
@@ -164,7 +191,10 @@ span {
   }
   main .nosotrosImg1 img {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     padding: 5px;
@@ -173,10 +203,19 @@ span {
   }
 }
 @media (min-width: 992px) {
-  main .contenedor-cards2 {
+  body .adopcion h1 {
+    font-size: 1.1rem;
+  }
+
+  body main {
+    margin-bottom: 0%;
+  }
+  body main .contenedor-cards2 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     overflow-x: hidden;
   }
 
@@ -188,7 +227,10 @@ span {
   }
   nav.navbar.navbar-expand-lg.bg-dark .navbarNav {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: end;
+    align-items: center;
   }
   nav.navbar.navbar-expand-lg.bg-dark a {
     padding: 1px 10px;
@@ -198,32 +240,41 @@ span {
     font-size: 1.8rem;
   }
 
-  h2 {
+  .banner h2 {
     font-size: 1.8rem;
   }
 
   .nosotrosImg1 img {
     width: 110%;
   }
+
+  .seccionNosotros {
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 1200px) {
-  .main .contenedor-cards {
+  body .adopcion h1 {
+    font-size: 1.3rem;
+  }
+
+  .main .contenedor-cards, .main main .contenedor-cards2, main .main .contenedor-cards2 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
     overflow-x: hidden;
   }
 }
-nav.navbar div div ul li a {
-  color: rgb(255, 255, 255);
-  font-family: "Heebo", sans-serif;
-}
-
 .navbar div div ul li {
   padding: 12px;
 }
-
 .navbar div div ul li:hover {
   background-color: rgb(44, 52, 52);
+}
+.navbar div div ul li a {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
 }
 
 .active2 {
@@ -232,33 +283,36 @@ nav.navbar div div ul li a {
 }
 
 .logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  display: flex;
 }
-
 .logo:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 body.fondoNos {
   background-color: rgba(221, 221, 221, 0.434);
 }
 
-main .alert3 {
+main .alert3, main .alert3 .alert2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-}
-main .alert3 .alert2 {
-  width: 80%;
-  display: flex;
-  justify-content: center;
+  align-items: center;
 }
 main .nosotros {
-  margin: 25px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: start;
+  margin: 25px;
 }
 main .nosotrosP {
   padding: 15px;
@@ -273,87 +327,102 @@ main .nosotrosImg2 img {
   margin-bottom: 50px;
 }
 
-.contenedor-cards {
-  margin: 30px 10px;
+main {
+  margin-bottom: 40%;
+}
+main .contenedor-cards, main .contenedor-cards2 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: start;
+  align-items: center;
+  margin: 30px 10px;
   overflow-x: scroll;
 }
-.contenedor-cards .cardsArticle {
+main .contenedor-cards .cardsArticle, main .contenedor-cards2 .cardsArticle {
   min-width: 250px;
 }
-
-.contenedor-cards2 {
-  margin: 30px 10px;
-  display: flex;
-  justify-content: start;
-  overflow-x: scroll;
-}
-.contenedor-cards2 .cardsArticle {
-  min-width: 250px;
-}
-
-div .zoom:hover {
+main div .zoom:hover {
   transform: scale(1.05);
 }
-div .centrar {
+main div .centrar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-bottom: 15px;
 }
-
-div .tarjeta {
+main div .tarjeta {
   margin: 5px;
   border-radius: 10px;
   background-color: rgb(227, 225, 225);
   box-shadow: 2px 2px 4px #000000;
   width: 190px;
 }
-div .tarjeta img {
+main div .tarjeta img {
   width: 100%;
   height: 130px;
 }
-div .iconoImg {
+main div .iconoImg {
   display: flex;
   box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-div.iconos {
+main div.iconos {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   background-color: rgb(227, 225, 225);
   padding: 10px;
 }
-div.iconos .icono {
+main div.iconos .icono {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
   background-color: #61F539;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
   color: rgb(0, 0, 0);
   font-size: 0.7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
   padding: 3px;
   height: 60px;
   width: 35%;
-  text-align: center;
 }
-div.iconos .icono:hover {
+main div.iconos .icono:hover {
   background-color: rgba(45, 203, 1, 0.883);
 }
-div.iconos .icono i {
+main div.iconos .icono i {
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
 }
-
-div.btnFooter {
-  padding-top: 10px;
+main div.btnFooter {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+body .breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  margin: 5px;
+}
+body .breadcrumbs ul li {
+  padding: 0px 1%;
 }/*# sourceMappingURL=style.css.map */

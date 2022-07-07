@@ -1,33 +1,37 @@
 @import "variables.scss";
 
-@media(min-width: 576px) {}
+@media(min-width: 576px) {
+    body {
+        .banner h2 {
+            font-size: 1.8rem;
+        }
+
+        main {
+            margin-bottom: 10%;
+
+            .infoIndex {
+                display: block;
+            }
+        }
+    }
+}
 
 @media(min-width: 768px) {
+
     span {
         font-size: 1.2rem;
     }
 
     footer {
-        .listas {
-            ul {
-                margin: 10px 35px;
 
-                li a img {
-                    width: 45px;
-                    margin-left: 10px;
-                }
+        ul.redes {
+            display: flex;
 
-                .redes {
-                    display: flex;
-                }
+            li a img {
+                width: 45px;
             }
 
-            .tituloFooter {
-                padding-bottom: 20px;
-                margin: 0px;
-            }
         }
-
     }
 
     main {
@@ -43,25 +47,34 @@
         }
 
         .nosotrosImg1 img {
-            display: flex;
-            flex-wrap: wrap;
+            @include propiedadesFlex(flex, row, wrap, center, center);
             width: 100%;
             height: auto;
             padding: 5px;
             margin-top: 15px;
-            box-shadow: $sombraClara;
+            box-shadow: map-get($sombra, sombraClara);
         }
     }
 }
 
 @media(min-width: 992px) {
 
-    main {
-        .contenedor-cards2 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            overflow-x: hidden;
+    body {
+        .adopcion {
+            h1 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    body {
+        main {
+            margin-bottom: 0%;
+
+            .contenedor-cards2 {
+                @include propiedadesFlex(flex, row, wrap, space-around, center);
+                overflow-x: hidden;
+            }
         }
     }
 
@@ -73,8 +86,7 @@
         }
 
         .navbarNav {
-            display: flex;
-            justify-content: end;
+            @include propiedadesFlex(flex, row, nowrap, end, center);
         }
 
         a {
@@ -87,7 +99,7 @@
         font-size: 1.8rem;
     }
 
-    h2 {
+    .banner h2 {
         font-size: 1.8rem;
     }
 
@@ -95,18 +107,28 @@
         width: 110%;
     }
 
+    .seccionNosotros {
+        margin-bottom: 50px;
+    }
+
 }
 
 @media(min-width: 1200px) {
 
-    .main {
-
-        .contenedor-cards {
-            display: flex;
-            justify-content: space-around;
-            overflow-x: hidden;
+    body {
+        .adopcion {
+            h1 {
+                font-size: 1.3rem;
+            }
         }
     }
 
+    .main {
+
+        .contenedor-cards {
+            @include propiedadesFlex(flex, row, nowrap, space-around, center);
+            overflow-x: hidden;
+        }
+    }
 
 }
