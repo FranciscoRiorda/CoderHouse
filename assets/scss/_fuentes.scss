@@ -4,6 +4,12 @@ body {
     background-color: map-get($color , blanco);
     margin-bottom: 200px;
 
+    main {
+        .seccion1 {
+            margin-bottom: 100px;
+        }
+    }
+
     h1 {
         color: map-get($color , blanco);
         font-family: map-get($fuente , titulos );
@@ -17,6 +23,10 @@ body {
         font-family: map-get($fuente , titulos );
         font-size: 1.2rem;
         text-shadow: map-get($sombra , sombra );
+    }
+
+    .portadaSecciones{
+        width: 100%;
     }
 
     h3 {
@@ -45,6 +55,8 @@ body {
     }
 
 }
+
+
 
 .nosotrosImg1 img {
     display: none;

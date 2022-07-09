@@ -25,11 +25,11 @@ html {
         .header {
             grid-area: header;
             padding: 0%;
-            margin-bottom: 1%;
         }
         
         .main {
             grid-area: main;
+            margin-bottom: 150px;
         }
         
         .footer {
