@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 body {
-    background-color: map-get($color , blanco);
+    background-color: map-get($color , grisClaro);
     margin-bottom: 200px;
 
     main {
@@ -11,22 +11,28 @@ body {
     }
 
     h1 {
-        color: map-get($color , blanco);
+        @include propiedadesFlex(flex, row, wrap, start, center );
         font-family: map-get($fuente , titulos );
-        font-size: 1.8rem;
-        text-align: center;
-        text-shadow: map-get($sombra , sombra );
+        text-shadow: map-get($sombra , sombraClara );
+        color: map-get($color , grisMedio );
+        font-size: 1.2rem;
+        margin-left: 35px;
+        margin-top: 30px;
     }
 
-    .banner h2 {
-        color: map-get($color , blanco);
-        font-family: map-get($fuente , titulos );
-        font-size: 1.2rem;
-        text-shadow: map-get($sombra , sombra );
+    h2 {
+        @extend h1;
+    }
+
+    .h2Index {
+        margin: 0%;
+        color: map-get($color , negro );
     }
 
     .portadaSecciones{
         width: 100%;
+        box-shadow: map-get($sombra , sombraClara );
+        
     }
 
     h3 {
@@ -47,7 +53,7 @@ body {
     .inconoIndex{
         font-size: 2rem;
         padding: 5px;
-        background-color: map-get($color , blanco );
+        background-color: map-get($color , grisClaro );
     }
 
     .carrusel {

@@ -85,27 +85,32 @@ form {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 240, 240);
   margin-bottom: 200px;
 }
 body main .seccion1 {
   margin-bottom: 100px;
 }
-body h1 {
-  color: rgb(255, 255, 255);
-  font-family: "Patrick Hand";
-  font-size: 1.8rem;
-  text-align: center;
-  text-shadow: 2px 2px 4px #000000;
-}
-body .banner h2 {
-  color: rgb(255, 255, 255);
-  font-family: "Patrick Hand";
+body h1, body h2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  font-family: "Arial";
+  text-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
+  color: rgb(74, 74, 74);
   font-size: 1.2rem;
-  text-shadow: 2px 2px 4px #000000;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+body .h2Index {
+  margin: 0%;
+  color: rgb(0, 0, 0);
 }
 body .portadaSecciones {
   width: 100%;
+  box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
 }
 body h3 {
   background-color: #61F539;
@@ -123,7 +128,7 @@ body .infoIndex {
 body .inconoIndex {
   font-size: 2rem;
   padding: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 240, 240);
 }
 body .carrusel {
   box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
@@ -141,30 +146,11 @@ span {
   background: linear-gradient(180deg, var(--transp) 0%, var(--transp) 53%, var(--cor) 54%, var(--cor) 94%, var(--transp) 95%, var(--transp) 100%);
 }
 
-.banner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../img/homePets2-min.png");
-  height: 60px;
-  box-shadow: 2px 2px 4px #000000;
-  width: 100%;
-  z-index: -1;
-  margin-bottom: 20px;
-}
-
-.huella {
-  font-size: 7rem;
-  opacity: 0.5;
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-}
-
 @media (min-width: 576px) {
-  body .banner h2 {
+  body h1, body h2 {
+    font-size: 1.8rem;
+  }
+  body h2 {
     font-size: 1.8rem;
   }
   body main .infoIndex {
@@ -206,7 +192,7 @@ span {
   }
 }
 @media (min-width: 992px) {
-  body .adopcion h1 {
+  body .adopcion h1, body .adopcion h2 {
     font-size: 1.1rem;
   }
 
@@ -239,7 +225,7 @@ span {
     padding: 1px 10px;
   }
 
-  h1 {
+  h1, body h2 {
     font-size: 1.8rem;
   }
 
@@ -256,7 +242,7 @@ span {
   }
 }
 @media (min-width: 1200px) {
-  body .adopcion h1 {
+  body .adopcion h1, body .adopcion h2 {
     font-size: 1.3rem;
   }
 
@@ -296,10 +282,6 @@ span {
 }
 .logo:hover {
   color: rgb(255, 255, 255);
-}
-
-body.fondoNos {
-  background-color: rgba(221, 221, 221, 0.434);
 }
 
 main .alert3, main .alert3 .alert2 {
@@ -358,9 +340,9 @@ main div .centrar {
   margin-bottom: 15px;
 }
 main div .tarjeta {
-  margin: 5px;
+  margin: 20px 5px;
   border-radius: 10px;
-  background-color: rgb(227, 225, 225);
+  background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 4px #000000;
   width: 190px;
 }
@@ -380,7 +362,6 @@ main div.iconos {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(227, 225, 225);
   padding: 10px;
 }
 main div.iconos .icono {

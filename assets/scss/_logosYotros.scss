@@ -12,20 +12,12 @@ span {
             var(--transp) 100%);
 }
 
-.banner {
-    @include propiedadesFlex(flex,row,nowrap,center,center);
-    background-image: url("../img/homePets2-min.png");
-    height: 60px;
-    box-shadow: map-get($sombra , sombra );
-    width: 100%;
-    z-index: -1;
-    margin-bottom: 20px;
-}
-
-.huella {
-    font-size: 7rem;
-    opacity: 0.5;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-}
+// .banner {
+//     @include propiedadesFlex(flex,row,nowrap,center,center);
+//     background-image: url("../img/homePets2-min.png");
+//     height: 60px;
+//     box-shadow: map-get($sombra , sombra );
+//     width: 100%;
+//     z-index: -1;
+//     margin-bottom: 20px;
+// }

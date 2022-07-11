@@ -2,13 +2,15 @@
 
 @media(min-width: 576px) {
     body {
-        .banner h2 {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
             font-size: 1.8rem;
         }
 
         main {
-            // margin-bottom: 10%;
-
             .infoIndex {
                 display: block;
             }

@@ -1,15 +1,16 @@
 $color:(
     principal: rgb(44, 52, 52),
     blanco: rgb(255, 255, 255),
+    grisClaro: rgb(240, 240, 240),
     gris: rgb(140, 139, 139),
-    grisClaro: rgb(227, 225, 225),
+    grisMedio: rgb(74, 74, 74),
     verde:#61F539,
     verdeHover: rgba(45, 203, 1, 0.883),
     negro: rgb(0, 0, 0),
     rojo: rgb(255, 0, 0));
 
 $fuente:(
-    titulos: 'Patrick Hand',
+    titulos: 'Arial',
     nombre: 'Franklin Gothic Medium',
     nav: sans-serif,
 ); 
@@ -18,7 +19,6 @@ $sombra:(
     sombra: 2px 2px 4px #000000,
     sombraClara: 2px 2px 4px #696969a2,
 );
-$fondoNosotros: rgba(221, 221, 221, 0.434);
 
 @mixin propiedadesFlex ($display, $direccion, $wrap, $justify, $align) {
     display: $display;
