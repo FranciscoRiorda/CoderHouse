@@ -5,7 +5,7 @@ footer {
     bottom: 0;
 
     .listas {
-        @include propiedadesFlex(flex,row,nowrap,space-evenly,start);
+        @include propiedadesFlex(flex,column,nowrap,center,center);
         background-color: map-get($color, principal);
 
         p.tituloFooter {
@@ -18,9 +18,10 @@ footer {
         ul {
             list-style: none;
             text-align: center;
+            padding: 0;
 
             li  {
-                @include propiedadesFlex(flex,row,nowrap,start,center);
+                @include propiedadesFlex(flex,row,nowrap,center,center);
             }
             a {
                 text-decoration: none;

@@ -5,6 +5,7 @@ body {
     margin-bottom: 200px;
 
     main {
+        margin-bottom: 450px;
         .seccion1 {
             margin-bottom: 100px;
         }
@@ -58,6 +59,10 @@ body {
 
     .carrusel {
         box-shadow: map-get($sombra , sombraClara );
+    }
+
+    .next2 {
+        background-color: rgb(114, 114, 114);
     }
 
 }

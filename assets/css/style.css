@@ -24,7 +24,6 @@ html {
 }
 .contenedor .main {
   grid-area: main;
-  margin-bottom: 150px;
 }
 .contenedor .footer {
   grid-area: footer;
@@ -37,10 +36,10 @@ footer {
 }
 footer .listas {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(44, 52, 52);
 }
 footer .listas p.tituloFooter {
@@ -52,12 +51,13 @@ footer .listas p.tituloFooter {
 footer .listas ul {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 footer .listas ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 footer .listas ul a {
@@ -87,6 +87,9 @@ form {
 body {
   background-color: rgb(240, 240, 240);
   margin-bottom: 200px;
+}
+body main {
+  margin-bottom: 450px;
 }
 body main .seccion1 {
   margin-bottom: 100px;
@@ -133,6 +136,9 @@ body .inconoIndex {
 body .carrusel {
   box-shadow: 2px 2px 4px rgba(105, 105, 105, 0.6352941176);
 }
+body .next2 {
+  background-color: rgb(114, 114, 114);
+}
 
 .nosotrosImg1 img {
   display: none;
@@ -153,22 +159,33 @@ span {
   body h2 {
     font-size: 1.8rem;
   }
+  body main {
+    margin-bottom: 150px;
+  }
   body main .infoIndex {
     display: block;
+  }
+  body .listas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  body .listas .listas2 {
+    padding: 15px;
   }
 }
 @media (min-width: 768px) {
   span {
     font-size: 1.2rem;
   }
-
   footer ul.redes {
     display: flex;
   }
   footer ul.redes li a img {
     width: 45px;
   }
-
   main .nosotrosP {
     padding: 15px;
     font-size: medium;
@@ -195,9 +212,8 @@ span {
   body .adopcion h1, body .adopcion h2 {
     font-size: 1.1rem;
   }
-
   body main {
-    margin-bottom: 0%;
+    margin-bottom: 100px;
   }
   body main .contenedor-cards2 {
     display: flex;
@@ -207,7 +223,6 @@ span {
     align-items: center;
     overflow-x: hidden;
   }
-
   nav.navbar.navbar-expand-lg.bg-dark {
     padding: 0%;
   }
@@ -224,19 +239,15 @@ span {
   nav.navbar.navbar-expand-lg.bg-dark a {
     padding: 1px 10px;
   }
-
   h1, body h2 {
     font-size: 1.8rem;
   }
-
   .banner h2 {
     font-size: 1.8rem;
   }
-
   .nosotrosImg1 img {
     width: 110%;
   }
-
   .seccionNosotros {
     margin-bottom: 50px;
   }
@@ -245,7 +256,6 @@ span {
   body .adopcion h1, body .adopcion h2 {
     font-size: 1.3rem;
   }
-
   .main .contenedor-cards, .main main .contenedor-cards2, main .main .contenedor-cards2 {
     display: flex;
     flex-direction: row;

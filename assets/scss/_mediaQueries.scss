@@ -11,8 +11,17 @@
         }
 
         main {
+            margin-bottom: 150px;
             .infoIndex {
                 display: block;
+            }
+        }
+
+        .listas {
+            @include propiedadesFlex(flex, row, nowrap, space-evenly, start);
+
+            .listas2 {
+                padding: 15px;
             }
         }
     }
@@ -71,7 +80,7 @@
 
     body {
         main {
-            margin-bottom: 0%;
+            margin-bottom: 100px;
 
             .contenedor-cards2 {
                 @include propiedadesFlex(flex, row, wrap, space-around, center);
